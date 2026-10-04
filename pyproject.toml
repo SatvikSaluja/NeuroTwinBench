@@ -1,0 +1,17 @@
+[project]
+name = "neurotwinbench"
+version = "0.1.0"
+description = "A ground-truth study of when functional connectivity stops reflecting biological connectivity"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "nemos>=0.2.8",
+    "pynapple>=0.10",
+]
+
+[project.optional-dependencies]
+hnn = ["hnn-core>=0.6.1"]
+
+[tool.setuptools.packages.find]
+include = ["neurotwinbench*"]

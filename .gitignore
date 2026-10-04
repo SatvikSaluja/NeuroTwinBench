@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+audit_output/
+cache/
+.venv/
+
+# run logs / scratch (not reproducible artifacts, regenerate by rerunning)
+*.log
+fit_heartbeat.txt
