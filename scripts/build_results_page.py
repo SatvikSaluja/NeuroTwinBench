@@ -6,6 +6,7 @@ from html import escape
 import argparse
 import json
 import shutil
+import subprocess
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -77,10 +78,12 @@ def main():
     real=source(args.stream_root/'artifacts/v4/release_report.json','streamglm_release_report.json')['real_data']
     real_table=table(['Retained neurons','Selected rank','Test gain over self-history (bits/spike) ↑','Peak RSS (GiB)'],[[r['retained_units'],r['selected_rank'],f"{r['test_gain_over_self_history_bits_per_spike']:.4f}",f"{r['peak_rss_gib']:.3f}"] for r in real],'Allen VISp, 300-second cohorts from the same session; not independent-session replications.')
     states=[]
+    process_lines = subprocess.check_output(['ps', '-eo', 'comm=,args='], text=True).splitlines()
     for p in sorted((ROOT/'results/phase2_full').glob('topology_*/status.json')):
         if (p.parent/'report.json').exists(): continue
         s=source(p,p.parent.name+'_checkpoint.json')
-        states.append(escape(p.parent.name)+f": last checkpoint says {escape(s.get('status','unknown'))}, chunk {s.get('chunk','?')}/{s.get('total','?')}. This is a saved checkpoint, not proof of a live process.")
+        active = any(line.split()[0].startswith('python') and 'phase2_studies.py' in line and p.parent.name in line for line in process_lines if line.split())
+        states.append(escape(p.parent.name)+f": INCOMPLETE — {'runner detected' if active else 'no runner detected at page build'}. Last saved simulation checkpoint: chunk {s.get('chunk','?')}/{s.get('total','?')}. No completed report or new recovery score. Status is a snapshot, not live monitoring.")
     coupled=list((args.stream_root/'artifacts/v8').glob('coupled1000*/report.json'))
     for p in coupled: source(p,'streamglm_'+p.parent.name+'.json')
     now=datetime.now(timezone.utc).strftime('%d %b %Y, %H:%M UTC')

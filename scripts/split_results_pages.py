@@ -39,6 +39,7 @@ def split_pages(html, manifest, built, hnn_root, stream_root):
             if m not in records and (sources / m['file']).exists():
                 (sources / m['file']).unlink()
         section = re.search(r'<section id="'+key+r'">.*?</section>', html, re.S).group(0)
+        section = section.replace('<details><summary>Incomplete experiment checkpoints', '<details open><summary>Incomplete experiment checkpoints')
         glossary = ''.join('<dt><strong>'+escape(t)+'</strong></dt><dd>'+escape(d)+'</dd>' for t,d in terms)
         links = ''.join('<li><a href="sources/'+escape(m['file'])+'">'+escape(m['file'])+'</a></li>' for m in records)
         page = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+title+' — Results</title>'+style+'</head><body><main>'
