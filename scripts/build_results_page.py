@@ -111,7 +111,8 @@ def main():
 <section id="sources"><h2>Evidence and reproducibility</h2><p>Report copies are bundled with this page so links work offline and when the folder is hosted. This is a selected evidence summary, not the complete raw spike/model archive. No simulations are started or changed by building the page.</p><ul class="source-list">'''+''.join('<li>'+link(m['file'],m['file'])+'</li>' for m in manifest)+'''</ul><p><a href="sources/manifest.json">Source manifest and snapshot time</a></p></section><footer>Plain HTML and CSS · No trackers, external fonts or JavaScript dependencies · Rebuild using scripts/build_results_page.py</footer></main></body></html>'''
     (out/'index.html').write_text(html)
     (sources/'manifest.json').write_text(json.dumps({'built_utc':now,'sources':manifest},indent=2))
-    print(out/'index.html')
+    from split_results_pages import split_pages
+    split_pages(html, manifest, now, ROOT, args.stream_root)
 
 if __name__ == '__main__':
     main()
