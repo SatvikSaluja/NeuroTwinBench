@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>RESULTS_REPORT</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<h1 id="neurotwinbench-results">NeuroTwinBench results</h1>
+<p>Snapshot: 2026-10-05. Completed reports are the evidence; a saved
+RUNNING flag does not establish that a job is alive.</p>
+<h2 id="main-result-sparse-topology">Main result: sparse topology</h2>
+<p>70-neuron circuits, recurrent excitatory connection probability 0.3,
+1 ms bins, 25 ms history, five basis functions, float64 disk-backed
+fitting, ridge 0.001. Each circuit has an original fit and three
+independently jittered fits.</p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Circuit</th>
+<th style="text-align: right;">Seconds</th>
+<th style="text-align: right;">L2 ROC-AUC</th>
+<th style="text-align: right;">All jitter AUCs (range)</th>
+<th style="text-align: right;">L2 average precision</th>
+<th style="text-align: right;">L5 ROC-AUC</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>C11</td>
+<td style="text-align: right;">2560</td>
+<td style="text-align: right;">0.700</td>
+<td style="text-align: right;">0.600–0.611</td>
+<td style="text-align: right;">0.577</td>
+<td style="text-align: right;">0.494</td>
+</tr>
+<tr class="even">
+<td>C12</td>
+<td style="text-align: right;">2560</td>
+<td style="text-align: right;">0.807</td>
+<td style="text-align: right;">0.635–0.653</td>
+<td style="text-align: right;">0.730</td>
+<td style="text-align: right;">0.581</td>
+</tr>
+<tr class="odd">
+<td>C13</td>
+<td style="text-align: right;">2560</td>
+<td style="text-align: right;">0.784</td>
+<td style="text-align: right;">0.616–0.625</td>
+<td style="text-align: right;">0.709</td>
+<td style="text-align: right;">0.555</td>
+</tr>
+<tr class="even">
+<td>C15</td>
+<td style="text-align: right;">12800</td>
+<td style="text-align: right;">0.731</td>
+<td style="text-align: right;">0.578–0.580</td>
+<td style="text-align: right;">0.666</td>
+<td style="text-align: right;">0.568</td>
+</tr>
+</tbody>
+</table>
+<p>All reported original/control fits converged. L2 exceeds all three
+jitter controls in every circuit. L5’s conditional AUC-difference
+intervals include zero. Distance-only AUCs are 0.447, 0.529, 0.524 and
+0.492 respectively. This supports selective recovery in this simulation
+design, not complete reconstruction or causal identification in real
+recordings.</p>
+<p>ROC-AUC measures ranking of true edges above absent candidate edges,
+not reconstruction accuracy. Average precision (stored as
+<code>pr_auc</code>) has an approximate random baseline of edge
+prevalence (~0.30). Jitter independently displaces spikes by ±50 ms,
+clipped within each segment. Bootstrap intervals resample neurons with
+fits held fixed; they exclude refitting and independent-circuit
+uncertainty. Longer C15 cannot isolate a duration effect because its
+wiring differs.</p>
+<h2 id="supporting-and-negative-findings">Supporting and negative
+findings</h2>
+<ul>
+<li>Five-basis synthetic calibration: mean Spearman strength recovery
+0.821 (population GLM), 0.816 (pairwise), 0.570 (CCG), 0.177 (jitter).
+Sign recovery ranges from 98.3% to 100%, rather than the previously
+quoted 99.2%–100% range. Matched GLM assumptions are a control, not
+validation of biological recovery.</li>
+<li>Location: paired area contrast +0.555, conditional interval [0.364,
+0.745], 621 pairs. This is a circuit-wide dendritic location swap, not a
+single-synapse causal effect.</li>
+<li>Corrected shared drive: observed-minus-hidden L2 AUC −0.000484; no
+benefit in this particular construction.</li>
+<li>Dense weight rank is confounded with distance. It is not independent
+evidence of synaptic identification.</li>
+<li>No reliable fine-latency claim or 270-neuron recovery result is
+established.</li>
+<li>C16 was incomplete at the last verified checkpoint. It is excluded
+from the result table.</li>
+</ul>
+<h2 id="evidence">Evidence</h2>
+<p>The <a href="results_page/index.html">HTML page</a> includes the
+tables and all controls. Small source reports are in <a
+href="results_page/sources">results_page/sources</a>; the <a
+href="results_page/sources/manifest.json">manifest</a> records their
+provenance. Large spike arrays, feature caches and optimizer checkpoints
+are intentionally not included in this publication bundle.</p>
+<p>See <a href="SIMULATIONS.md">SIMULATIONS.md</a> for execution,
+resumption and proposed experiments.</p>
+</body>
+</html>

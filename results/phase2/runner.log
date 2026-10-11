@@ -1,0 +1,25 @@
+START phase2_existing_uncertainty: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/phase2_uncertainty.py
+DONE phase2_existing_uncertainty: 101s
+START phase2_topology_c11_e1000000: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/phase2_studies.py --kind topology --conn-seed 11 --event-seed 1000000 --out results/phase2/topology_c11_e1000000
+Traceback (most recent call last):
+  File "/home/satvik/hnn_neuro_bridge/experiments/run_phase2.py", line 25, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/satvik/hnn_neuro_bridge/experiments/run_phase2.py", line 19, in main
+    start=time.time();run_step(task['name'],task['args'])
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/satvik/hnn_neuro_bridge/experiments/run_handoff.py", line 51, in run_step
+    child.wait(timeout=30)
+  File "/home/satvik/miniconda3/envs/neurotwin/lib/python3.11/subprocess.py", line 1264, in wait
+    return self._wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/satvik/miniconda3/envs/neurotwin/lib/python3.11/subprocess.py", line 2036, in _wait
+    (pid, sts) = self._try_wait(os.WNOHANG)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/satvik/miniconda3/envs/neurotwin/lib/python3.11/subprocess.py", line 2011, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/satvik/hnn_neuro_bridge/experiments/run_phase2.py", line 11, in stop
+    def stop(*_):raise RuntimeError('phase2 interrupted; restart reuses complete chunks and fitted parameters')
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: phase2 interrupted; restart reuses complete chunks and fitted parameters

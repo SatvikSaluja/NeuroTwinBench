@@ -1,0 +1,23 @@
+{
+  "max_filter_abs_difference": 1.7458362702033048e-06,
+  "nemos": {
+    "function_val": 0.8447365177360088,
+    "num_steps": 29,
+    "converged": true,
+    "reached_max_steps": false
+  },
+  "disk": {
+    "function_val": 0.8447365177363377,
+    "num_steps": 18,
+    "converged": true,
+    "optimizer_success": true,
+    "gradient_inf_norm": 3.065002990107575e-08,
+    "reached_max_steps": false,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "solver": "DISK_LBFGS",
+    "precision": "float64",
+    "feature_cache": "cache/disk_features/68c81c320f74f9dd8279a1a3",
+    "resume": "parameter-only L-BFGS restart"
+  },
+  "data": "16000 bins, 5 neurons, 1 drive, 2 epochs, fixed seed781"
+}

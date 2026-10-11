@@ -1,0 +1,2 @@
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+LBFGS_f64       507s  peak   6.3GB  11 classes scored

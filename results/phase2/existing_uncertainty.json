@@ -1,0 +1,269 @@
+{
+  "records": [
+    {
+      "circuit": 3,
+      "jitter_seed": 101,
+      "projection": "L2_pyramidal",
+      "uncertainty": {
+        "status": "DONE",
+        "n_nodes": 25,
+        "n_pairs": 596,
+        "bootstrap_valid": 1000,
+        "auc_difference": 0.12894570068632605,
+        "ap_difference": 0.2072980010201163,
+        "auc_difference_interval95": [
+          0.043386051391635816,
+          0.20659901669835448
+        ],
+        "ap_difference_interval95": [
+          0.1005716295602571,
+          0.3028097915902575
+        ],
+        "scope": "conditional on fitted models and fixed circuit; neuron-cluster resampling, not refitting, not an independent-circuit confidence interval"
+      }
+    },
+    {
+      "circuit": 3,
+      "jitter_seed": 101,
+      "projection": "L5_pyramidal",
+      "uncertainty": {
+        "status": "DONE",
+        "n_nodes": 25,
+        "n_pairs": 596,
+        "bootstrap_valid": 1000,
+        "auc_difference": 0.022153904237962374,
+        "ap_difference": 0.012005621651506593,
+        "auc_difference_interval95": [
+          -0.03573890611328647,
+          0.06785264797678063
+        ],
+        "ap_difference_interval95": [
+          -0.037533247084482774,
+          0.06824720839931948
+        ],
+        "scope": "conditional on fitted models and fixed circuit; neuron-cluster resampling, not refitting, not an independent-circuit confidence interval"
+      }
+    },
+    {
+      "circuit": 3,
+      "jitter_seed": 202,
+      "projection": "L2_pyramidal",
+      "uncertainty": {
+        "status": "DONE",
+        "n_nodes": 25,
+        "n_pairs": 596,
+        "bootstrap_valid": 1000,
+        "auc_difference": 0.13529657645995985,
+        "ap_difference": 0.22588183235404757,
+        "auc_difference_interval95": [
+          0.05042380875159079,
+          0.21608462211910495
+        ],
+        "ap_difference_interval95": [
+          0.12304873761514482,
+          0.33633372954296253
+        ],
+        "scope": "conditional on fitted models and fixed circuit; neuron-cluster resampling, not refitting, not an independent-circuit confidence interval"
+      }
+    },
+    {
+      "circuit": 3,
+      "jitter_seed": 202,
+      "projection": "L5_pyramidal",
+      "uncertainty": {
+        "status": "DONE",
+        "n_nodes": 25,
+        "n_pairs": 596,
+        "bootstrap_valid": 1000,
+        "auc_difference": 0.020724620093577673,
+        "ap_difference": 0.00918208579053753,
+        "auc_difference_interval95": [
+          -0.03848927242901558,
+          0.07111766581632656
+        ],
+        "ap_difference_interval95": [
+          -0.03639025002578504,
+          0.061275880754490857
+        ],
+        "scope": "conditional on fitted models and fixed circuit; neuron-cluster resampling, not refitting, not an independent-circuit confidence interval"
+      }
+    },
+    {
+      "circuit": 3,
+      "jitter_seed": 303,
+      "projection": "L2_pyramidal",
+      "uncertainty": {
+        "status": "DONE",
+        "n_nodes": 25,
+        "n_pairs": 596,
+        "bootstrap_valid": 1000,
+        "auc_difference": 0.14137777597993606,
+        "ap_difference": 0.2239822550428297,
+        "auc_difference_interval95": [
+          0.05590370599675858,
+          0.2263728148210908
+        ],
+        "ap_difference_interval95": [
+          0.1168498250926956,
+          0.34172909577477073
+        ],
+        "scope": "conditional on fitted models and fixed circuit; neuron-cluster resampling, not refitting, not an independent-circuit confidence interval"
+      }
+    },
+    {
+      "circuit": 3,
+      "jitter_seed": 303,
+      "projection": "L5_pyramidal",
+      "uncertainty": {
+        "status": "DONE",
+        "n_nodes": 25,
+        "n_pairs": 596,
+        "bootstrap_valid": 1000,
+        "auc_difference": 0.019200949260412825,
+        "ap_difference": 0.004533704154873752,
+        "auc_difference_interval95": [
+          -0.03662622867013479,
+          0.06889654320702407
+        ],
+        "ap_difference_interval95": [
+          -0.04790829450528894,
+          0.059032980654573686
+        ],
+        "scope": "conditional on fitted models and fixed circuit; neuron-cluster resampling, not refitting, not an independent-circuit confidence interval"
+      }
+    },
+    {
+      "circuit": 4,
+      "jitter_seed": 101,
+      "projection": "L2_pyramidal",
+      "uncertainty": {
+        "status": "DONE",
+        "n_nodes": 25,
+        "n_pairs": 596,
+        "bootstrap_valid": 1000,
+        "auc_difference": 0.11254006410256412,
+        "ap_difference": 0.21259561073609207,
+        "auc_difference_interval95": [
+          0.044595778657104436,
+          0.18754225456491075
+        ],
+        "ap_difference_interval95": [
+          0.11203916492941841,
+          0.30467571295062823
+        ],
+        "scope": "conditional on fitted models and fixed circuit; neuron-cluster resampling, not refitting, not an independent-circuit confidence interval"
+      }
+    },
+    {
+      "circuit": 4,
+      "jitter_seed": 101,
+      "projection": "L5_pyramidal",
+      "uncertainty": {
+        "status": "DONE",
+        "n_nodes": 25,
+        "n_pairs": 596,
+        "bootstrap_valid": 1000,
+        "auc_difference": 0.005742521367521514,
+        "ap_difference": 0.03786863757080855,
+        "auc_difference_interval95": [
+          -0.061153357716143456,
+          0.06389552866463866
+        ],
+        "ap_difference_interval95": [
+          -0.02113923734868787,
+          0.1009602129120417
+        ],
+        "scope": "conditional on fitted models and fixed circuit; neuron-cluster resampling, not refitting, not an independent-circuit confidence interval"
+      }
+    },
+    {
+      "circuit": 4,
+      "jitter_seed": 202,
+      "projection": "L2_pyramidal",
+      "uncertainty": {
+        "status": "DONE",
+        "n_nodes": 25,
+        "n_pairs": 596,
+        "bootstrap_valid": 1000,
+        "auc_difference": 0.12469284188034191,
+        "ap_difference": 0.23628212242348945,
+        "auc_difference_interval95": [
+          0.052977085638716094,
+          0.20921891621265634
+        ],
+        "ap_difference_interval95": [
+          0.1287663924562649,
+          0.3331050843938399
+        ],
+        "scope": "conditional on fitted models and fixed circuit; neuron-cluster resampling, not refitting, not an independent-circuit confidence interval"
+      }
+    },
+    {
+      "circuit": 4,
+      "jitter_seed": 202,
+      "projection": "L5_pyramidal",
+      "uncertainty": {
+        "status": "DONE",
+        "n_nodes": 25,
+        "n_pairs": 596,
+        "bootstrap_valid": 1000,
+        "auc_difference": 0.0053552350427350515,
+        "ap_difference": 0.045317086361238046,
+        "auc_difference_interval95": [
+          -0.06411854457639601,
+          0.06498336294450827
+        ],
+        "ap_difference_interval95": [
+          -0.016980571831598963,
+          0.11032904299759533
+        ],
+        "scope": "conditional on fitted models and fixed circuit; neuron-cluster resampling, not refitting, not an independent-circuit confidence interval"
+      }
+    },
+    {
+      "circuit": 4,
+      "jitter_seed": 303,
+      "projection": "L2_pyramidal",
+      "uncertainty": {
+        "status": "DONE",
+        "n_nodes": 25,
+        "n_pairs": 596,
+        "bootstrap_valid": 1000,
+        "auc_difference": 0.11862980769230769,
+        "ap_difference": 0.21979281818653407,
+        "auc_difference_interval95": [
+          0.04816638255602095,
+          0.1946383143134786
+        ],
+        "ap_difference_interval95": [
+          0.11051473897715096,
+          0.31592137539365683
+        ],
+        "scope": "conditional on fitted models and fixed circuit; neuron-cluster resampling, not refitting, not an independent-circuit confidence interval"
+      }
+    },
+    {
+      "circuit": 4,
+      "jitter_seed": 303,
+      "projection": "L5_pyramidal",
+      "uncertainty": {
+        "status": "DONE",
+        "n_nodes": 25,
+        "n_pairs": 596,
+        "bootstrap_valid": 1000,
+        "auc_difference": 0.00021367521367521292,
+        "ap_difference": 0.03797495181527766,
+        "auc_difference_interval95": [
+          -0.06961488708731353,
+          0.059103254633422454
+        ],
+        "ap_difference_interval95": [
+          -0.027003707537739098,
+          0.09905307995643373
+        ],
+        "scope": "conditional on fitted models and fixed circuit; neuron-cluster resampling, not refitting, not an independent-circuit confidence interval"
+      }
+    }
+  ],
+  "scope": "fixed fitted models; neuron dependence accounted for by cluster resampling; no claim of full estimator or circuit uncertainty"
+}

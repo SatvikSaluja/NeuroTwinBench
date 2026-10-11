@@ -1,0 +1,2 @@
+config (n_basis=5, float64)             time   peakGB      rho    sign
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.

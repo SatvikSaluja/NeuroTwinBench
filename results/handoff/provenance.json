@@ -1,0 +1,47 @@
+{
+  "python": "3.11.16 (main, Aug 27 2026, 14:44:21) [GCC 14.3.0]",
+  "versions": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "jax": "0.10.2",
+    "jaxlib": "0.10.2",
+    "nemos": "0.2.8",
+    "hnn-core": "0.6.1",
+    "neuron": "8.2.7",
+    "mpi4py": "4.1.2",
+    "psutil": "7.2.2"
+  },
+  "base_git_commit": "9dca3efbb8df8b396ec4c9dfb19e7d245c72aaec",
+  "working_tree_modified": true,
+  "source_sha256": {
+    "neurotwinbench/metrics.py": "c07e17c7e4661be265e3f3a513edd9badeed3a7b8ef1cea0b07e20695ea627f4",
+    "neurotwinbench/fit.py": "77b17f38dbdd98b76532a1d9c827ef36c077f3207dbd78313fa24d3b7a223d44",
+    "neurotwinbench/synthetic.py": "5356b0e7926a46f2861b79562e1adac89aee80c5e358b4eae4d8065d804489d3",
+    "neurotwinbench/ground_truth.py": "f2c74c48561f28c695b4748b94f02194962e0fc137d626e8383d2b4fdbe53409",
+    "neurotwinbench/simulate.py": "aae76b2c462bc39006361478ec1cdf2224b629f64dd09cdb9e98a285efe13c08",
+    "neurotwinbench/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "neurotwinbench/reporting.py": "91236ee382d25f60817d8311782f281da1c5197d4170fee42bd0683462cb1319",
+    "experiments/fit_production.py": "773ab75bfcda5f5d6e1d2ddd5dab5081e7db29a04cbed254d37d686cf4612451",
+    "experiments/report_handoff.py": "b1105abcd93cc5c2b1e05254a3d7e70cf1f317816f4251d117d2b7dc66e4df05",
+    "experiments/latency_calibration.py": "5617e738ef8d6c823503ad37ebe33f83edfbe2fd679e10b2b37988071fdf39d0",
+    "experiments/location.py": "1c8f9591ca60497a057c10a70230b62dcfac4f5aff586627874c9f9e6b07462d",
+    "experiments/calibrate.py": "dbbdae6f0e27cacd7534a12bce8df2c5d713e014fbca6c6f81aa6cfc65ece797",
+    "experiments/topology.py": "6ae6ce4ed06cece5c4f5c1ef2d99e97d471b201cb6e8a208c6d8515504ba0aa7",
+    "experiments/run_handoff.py": "11c12467e8bebeb6c012a030593b3a847cedf859d4b97de2e56247ed513bf045",
+    "experiments/hnn_first.py": "c2e2e65196517948288f5eac6397951aaa373321c5de8a6da606b533f223c8d9",
+    "experiments/fit_one.py": "e561ba8da006a8b513f963dda0283107fedc2c4827512efd3131cf9c6ad6bac3",
+    "experiments/production.py": "ea4a1813e7c988aedc8c2fae3488955613d99b873fbf307cea45e2dcbc5051b6",
+    "experiments/production_baselines.py": "8e6175fe66592119bd2ccabf1c5961a023ad101cb522456c7fb08538bb1b5f91",
+    "experiments/grid.py": "2146740a5a627ebb7597b7072ef922e23e1437fc197ab5f1583b5ec1328f2c5e"
+  },
+  "production_cache_sha256": "6f9619b85eb683288fe5fb54564710134c9bb2fa8d4bbfe4a44f8cfbb9db04b5",
+  "configuration": {
+    "solver": "LBFGS",
+    "float32": true,
+    "n_basis": 5,
+    "regularizer": 0.001,
+    "max_iter": 500,
+    "history_ms": 25,
+    "segment_boundaries": true
+  }
+}

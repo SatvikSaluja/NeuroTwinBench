@@ -1,0 +1,2 @@
+STAGE 1: validate the solver against a known answer
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.

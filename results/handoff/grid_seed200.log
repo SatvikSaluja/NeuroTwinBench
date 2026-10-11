@@ -1,0 +1,87 @@
+
+START Thu Sep 24 07:54:59 2026 ['/home/satvik/miniconda3/envs/neurotwin/bin/python', 'experiments/grid.py', '--from-cache', 'results/seed200/production_spikes.npz', '--seeds', '200', '--n-basis', '5', '--regularizer', '0.001', '--max-iter', '500', '--float32', '--out', 'results/seed200']
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+DONE full/true: 1551s, 18.30 GiB; converged=True
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+/home/satvik/miniconda3/envs/neurotwin/lib/python3.11/site-packages/nemos/glm/glm.py:751: RuntimeWarning: The fit did not converge. Consider the following:
+1) Enable float64 with ``jax.config.update('jax_enable_x64', True)`` 
+2) Increase the max number of iterations or increase tolerance (if reasonable). These parameters can be specified by providing a ``solver_kwargs`` dictionary. For the available options see the ``self.solver.__init__`` docstrings.
+  warnings.warn(
+DONE full/proxy: 1750s, 18.29 GiB; converged=False
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+DONE full/hidden: 412s, 18.06 GiB; converged=True
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+DONE interneurons_hidden/true: 579s, 13.40 GiB; converged=True
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+/home/satvik/miniconda3/envs/neurotwin/lib/python3.11/site-packages/nemos/glm/glm.py:751: RuntimeWarning: The fit did not converge. Consider the following:
+1) Enable float64 with ``jax.config.update('jax_enable_x64', True)`` 
+2) Increase the max number of iterations or increase tolerance (if reasonable). These parameters can be specified by providing a ``solver_kwargs`` dictionary. For the available options see the ``self.solver.__init__`` docstrings.
+  warnings.warn(
+DONE interneurons_hidden/proxy: 802s, 13.40 GiB; converged=False
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+DONE interneurons_hidden/hidden: 172s, 13.20 GiB; converged=True
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+DONE random_subsample/true: 649s, 13.38 GiB; converged=True
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+/home/satvik/miniconda3/envs/neurotwin/lib/python3.11/site-packages/nemos/glm/glm.py:751: RuntimeWarning: The fit did not converge. Consider the following:
+1) Enable float64 with ``jax.config.update('jax_enable_x64', True)`` 
+2) Increase the max number of iterations or increase tolerance (if reasonable). These parameters can be specified by providing a ``solver_kwargs`` dictionary. For the available options see the ``self.solver.__init__`` docstrings.
+  warnings.warn(
+DONE random_subsample/proxy: 783s, 13.49 GiB; converged=False
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+DONE random_subsample/hidden: 160s, 13.18 GiB; converged=True
+
+L2_pyramidal->L2_basket|ampa|soma
+observation                    true      proxy     hidden
+full                         +0.724     +0.724     +0.724
+interneurons_hidden              --         --         --
+random_subsample             +0.787     +0.786     +0.787
+
+L2_pyramidal->L2_pyramidal|ampa|proximal
+observation                    true      proxy     hidden
+full                         +0.313     +0.313     +0.313
+interneurons_hidden          +0.280     +0.281     +0.280
+random_subsample             +0.237     +0.237     +0.237
+
+L2_pyramidal->L2_pyramidal|nmda|proximal
+observation                    true      proxy     hidden
+full                         +0.313     +0.313     +0.313
+interneurons_hidden          +0.280     +0.281     +0.280
+random_subsample             +0.237     +0.237     +0.237
+
+L2_pyramidal->L5_basket|ampa|soma
+observation                    true      proxy     hidden
+full                         +0.698     +0.698     +0.699
+interneurons_hidden              --         --         --
+random_subsample             +0.763     +0.762     +0.762
+
+L2_pyramidal->L5_pyramidal|ampa|distal
+observation                    true      proxy     hidden
+full                         +0.099     +0.099     +0.099
+interneurons_hidden          -0.085     -0.085     -0.085
+random_subsample             +0.158     +0.158     +0.159
+
+L2_pyramidal->L5_pyramidal|ampa|proximal
+observation                    true      proxy     hidden
+full                         +0.099     +0.099     +0.099
+interneurons_hidden          -0.085     -0.085     -0.085
+random_subsample             +0.158     +0.158     +0.159
+
+L5_pyramidal->L5_basket|ampa|soma
+observation                    true      proxy     hidden
+full                         +0.384     +0.384     +0.384
+interneurons_hidden              --         --         --
+random_subsample             +0.398     +0.397     +0.398
+
+L5_pyramidal->L5_pyramidal|ampa|proximal
+observation                    true      proxy     hidden
+full                         +0.493     +0.493     +0.493
+interneurons_hidden          +0.499     +0.499     +0.499
+random_subsample             +0.507     +0.507     +0.507
+
+L5_pyramidal->L5_pyramidal|nmda|proximal
+observation                    true      proxy     hidden
+full                         +0.493     +0.493     +0.493
+interneurons_hidden          +0.499     +0.499     +0.499
+random_subsample             +0.507     +0.507     +0.507
+DONE wrote results/seed200/grid.json

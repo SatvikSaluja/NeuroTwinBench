@@ -1,0 +1,11 @@
+{
+  "status": "RUNNING",
+  "step": "phase2_shared_c11",
+  "runner_pid": 208886,
+  "child_pid": 209133,
+  "updated_unix": 1790739877.176724,
+  "elapsed_s": 6780.997034788132,
+  "rss_gib": 3.877490997314453,
+  "available_gib": 19.72073745727539,
+  "log": "/home/satvik/hnn_neuro_bridge/results/handoff/phase2_shared_c11.log"
+}

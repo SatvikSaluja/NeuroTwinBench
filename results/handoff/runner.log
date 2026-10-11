@@ -1,0 +1,50 @@
+START grid_seed100: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/grid.py --from-cache results/production_spikes.npz --seeds 100 --n-basis 5 --regularizer 0.001 --max-iter 500 --float32 --out results/seed100
+START grid_seed100: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/grid.py --from-cache results/production_spikes.npz --seeds 100 --n-basis 5 --regularizer 0.001 --max-iter 500 --float32 --out results/seed100
+DONE grid_seed100: 8874s
+START report: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/report_handoff.py
+DONE report: 1s
+START figures: /home/satvik/miniconda3/envs/neurotwin/bin/python figures/make_figures.py
+DONE figures: 2s
+START baselines_seed100: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/production_baselines.py --from-cache results/production_spikes.npz --seed 100 --out results/seed100
+DONE baselines_seed100: 14617s
+START report: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/report_handoff.py
+DONE report: 1s
+START figures: /home/satvik/miniconda3/envs/neurotwin/bin/python figures/make_figures.py
+DONE figures: 2s
+START latency: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/latency_calibration.py --duration 300 --n-basis 5 --float32 --out results/latency
+DONE latency: 37s
+START report: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/report_handoff.py
+DONE report: 1s
+START figures: /home/satvik/miniconda3/envs/neurotwin/bin/python figures/make_figures.py
+DONE figures: 2s
+START simulate_seed200: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/production.py --chunks 8 --chunk-s 320 --base-seed 200 --n-basis 5 --simulate-only --out results/seed200
+DONE simulate_seed200: 15963s
+START grid_seed200: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/grid.py --from-cache results/seed200/production_spikes.npz --seeds 200 --n-basis 5 --regularizer 0.001 --max-iter 500 --float32 --out results/seed200
+DONE grid_seed200: 6892s
+START report: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/report_handoff.py
+DONE report: 1s
+START figures: /home/satvik/miniconda3/envs/neurotwin/bin/python figures/make_figures.py
+DONE figures: 2s
+START baselines_seed200: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/production_baselines.py --from-cache results/seed200/production_spikes.npz --seed 200 --out results/seed200
+DONE baselines_seed200: 15142s
+START report: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/report_handoff.py
+DONE report: 1s
+START figures: /home/satvik/miniconda3/envs/neurotwin/bin/python figures/make_figures.py
+DONE figures: 2s
+START simulate_seed300: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/production.py --chunks 8 --chunk-s 320 --base-seed 300 --n-basis 5 --simulate-only --out results/seed300
+DONE simulate_seed300: 20103s
+START grid_seed300: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/grid.py --from-cache results/seed300/production_spikes.npz --seeds 300 --n-basis 5 --regularizer 0.001 --max-iter 500 --float32 --out results/seed300
+DONE grid_seed300: 7291s
+START report: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/report_handoff.py
+DONE report: 1s
+START figures: /home/satvik/miniconda3/envs/neurotwin/bin/python figures/make_figures.py
+DONE figures: 2s
+START baselines_seed300: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/production_baselines.py --from-cache results/seed300/production_spikes.npz --seed 300 --out results/seed300
+DONE baselines_seed300: 13630s
+START report: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/report_handoff.py
+DONE report: 1s
+START figures: /home/satvik/miniconda3/envs/neurotwin/bin/python figures/make_figures.py
+DONE figures: 2s
+START pilot_location: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/run_handoff.py --pilot location --conn-seed 3
+DONE pilot_location: 173s
+START simulate_location: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/production.py --chunks 7 --chunk-s 320 --base-seed 2 --n-basis 5 --simulate-only --out results/location --network location

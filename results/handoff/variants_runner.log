@@ -1,0 +1,73 @@
+START simulate_location: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/production.py --chunks 7 --chunk-s 320 --base-seed 2 --n-basis 5 --simulate-only --out results/location --network location
+FAILED memory guard: only 1.77 GiB available
+Traceback (most recent call last):
+  File "/home/satvik/hnn_neuro_bridge/experiments/run_handoff.py", line 206, in <module>
+    main()
+  File "/home/satvik/hnn_neuro_bridge/experiments/run_handoff.py", line 170, in main
+    variant('location')
+  File "/home/satvik/hnn_neuro_bridge/experiments/run_handoff.py", line 111, in variant
+    cache = production(2, out, extra, chunks=chunks)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/satvik/hnn_neuro_bridge/experiments/run_handoff.py", line 83, in production
+    run_step(f'simulate_{Path(out).name}', ['experiments/production.py', '--chunks', str(chunks),
+  File "/home/satvik/hnn_neuro_bridge/experiments/run_handoff.py", line 49, in run_step
+    raise RuntimeError(f'memory guard: only {available:.2f} GiB available')
+RuntimeError: memory guard: only 1.77 GiB available
+START simulate_location: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/production.py --chunks 7 --chunk-s 320 --base-seed 2 --n-basis 5 --simulate-only --out results/location --network location
+FAILED simulate_location exited 1; see /home/satvik/hnn_neuro_bridge/results/handoff/simulate_location.log
+Traceback (most recent call last):
+  File "/home/satvik/hnn_neuro_bridge/experiments/run_handoff.py", line 206, in <module>
+    main()
+  File "/home/satvik/hnn_neuro_bridge/experiments/run_handoff.py", line 170, in main
+    variant('location')
+  File "/home/satvik/hnn_neuro_bridge/experiments/run_handoff.py", line 111, in variant
+    cache = production(2, out, extra, chunks=chunks)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/satvik/hnn_neuro_bridge/experiments/run_handoff.py", line 83, in production
+    run_step(f'simulate_{Path(out).name}', ['experiments/production.py', '--chunks', str(chunks),
+  File "/home/satvik/hnn_neuro_bridge/experiments/run_handoff.py", line 55, in run_step
+    raise RuntimeError(f'{name} exited {child.returncode}; see {RUN / (name + ".log")}')
+RuntimeError: simulate_location exited 1; see /home/satvik/hnn_neuro_bridge/results/handoff/simulate_location.log
+START simulate_location: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/production.py --chunks 7 --chunk-s 320 --base-seed 2 --n-basis 5 --simulate-only --out results/location --network location
+FAILED runner received signal 15
+Traceback (most recent call last):
+  File "/home/satvik/hnn_neuro_bridge/experiments/run_handoff.py", line 206, in <module>
+    main()
+  File "/home/satvik/hnn_neuro_bridge/experiments/run_handoff.py", line 170, in main
+    variant('location')
+  File "/home/satvik/hnn_neuro_bridge/experiments/run_handoff.py", line 111, in variant
+    cache = production(2, out, extra, chunks=chunks)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/satvik/hnn_neuro_bridge/experiments/run_handoff.py", line 83, in production
+    run_step(f'simulate_{Path(out).name}', ['experiments/production.py', '--chunks', str(chunks),
+  File "/home/satvik/hnn_neuro_bridge/experiments/run_handoff.py", line 51, in run_step
+    child.wait(timeout=30)
+  File "/home/satvik/miniconda3/envs/neurotwin/lib/python3.11/subprocess.py", line 1264, in wait
+    return self._wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/satvik/miniconda3/envs/neurotwin/lib/python3.11/subprocess.py", line 2047, in _wait
+    time.sleep(delay)
+  File "/home/satvik/hnn_neuro_bridge/experiments/run_handoff.py", line 166, in terminate
+    raise RuntimeError(f'runner received signal {signum}')
+RuntimeError: runner received signal 15
+START simulate_location: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/production.py --chunks 7 --chunk-s 320 --base-seed 2 --n-basis 5 --simulate-only --out results/location --network location
+DONE simulate_location: 8649s
+START fit_location: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/location.py --seeds 2 --from-cache results/location/production_spikes.npz --out results/location --float32 --n-basis 5 --max-iter 500
+DONE fit_location: 1755s
+START pilot_topology_c3: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/run_handoff.py --pilot topology --conn-seed 3
+DONE pilot_topology_c3: 171s
+START simulate_topology_c3: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/production.py --chunks 10 --chunk-s 320 --base-seed 2 --n-basis 5 --simulate-only --out results/topology_c3 --probability .3 --conn-seed 3
+START simulate_topology_c3: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/production.py --chunks 10 --chunk-s 320 --base-seed 2 --n-basis 5 --simulate-only --out results/topology_c3 --probability .3 --conn-seed 3
+DONE simulate_topology_c3: 23440s
+START fit_topology_c3: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/topology.py --probability .3 --conn-seeds 3 --event-seeds 2 --from-cache results/topology_c3/production_spikes.npz --out results/topology_c3 --float32 --n-basis 5 --max-iter 500
+FAILED memory guard: only 1.27 GiB available
+Traceback (most recent call last):
+  File "/home/satvik/hnn_neuro_bridge/experiments/run_handoff.py", line 210, in <module>
+    main()
+  File "/home/satvik/hnn_neuro_bridge/experiments/run_handoff.py", line 175, in main
+    variant('topology', 3)
+  File "/home/satvik/hnn_neuro_bridge/experiments/run_handoff.py", line 116, in variant
+    run_step(f'fit_{name}', [*command, '--from-cache', str(cache), '--out', str(out),
+  File "/home/satvik/hnn_neuro_bridge/experiments/run_handoff.py", line 49, in run_step
+    raise RuntimeError(f'memory guard: only {available:.2f} GiB available')
+RuntimeError: memory guard: only 1.27 GiB available

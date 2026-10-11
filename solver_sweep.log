@@ -1,0 +1,41 @@
+=== solver comparison at 400000 bins, one process each ===
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+LBFGS_f64: 474s peak=5.29GB raw_design=1.14GB classes=11
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+/home/satvik/miniconda3/envs/neurotwin/lib/python3.11/site-packages/nemos/glm/glm.py:751: RuntimeWarning: The fit did not converge. Consider the following:
+1) Enable float64 with ``jax.config.update('jax_enable_x64', True)`` 
+2) Increase the max number of iterations or increase tolerance (if reasonable). These parameters can be specified by providing a ``solver_kwargs`` dictionary. For the available options see the ``self.solver.__init__`` docstrings.
+  warnings.warn(
+SVRG_f64: 837s peak=5.22GB raw_design=1.14GB classes=11
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+/home/satvik/miniconda3/envs/neurotwin/lib/python3.11/site-packages/nemos/glm/glm.py:751: RuntimeWarning: The fit did not converge. Consider the following:
+1) Enable float64 with ``jax.config.update('jax_enable_x64', True)`` 
+2) Increase the max number of iterations or increase tolerance (if reasonable). These parameters can be specified by providing a ``solver_kwargs`` dictionary. For the available options see the ``self.solver.__init__`` docstrings.
+  warnings.warn(
+SVRG_f32: 387s peak=3.12GB raw_design=0.57GB classes=11
+=== memory scaling, float64 LBFGS, one process each ===
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+/home/satvik/miniconda3/envs/neurotwin/lib/python3.11/site-packages/nemos/glm/glm.py:751: RuntimeWarning: The fit did not converge. Consider the following:
+1) Enable float64 with ``jax.config.update('jax_enable_x64', True)`` 
+2) Increase the max number of iterations or increase tolerance (if reasonable). These parameters can be specified by providing a ``solver_kwargs`` dictionary. For the available options see the ``self.solver.__init__`` docstrings.
+  warnings.warn(
+scale_200000: 148s peak=3.08GB raw_design=0.57GB classes=11
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+/home/satvik/miniconda3/envs/neurotwin/lib/python3.11/site-packages/nemos/glm/glm.py:751: RuntimeWarning: The fit did not converge. Consider the following:
+1) Enable float64 with ``jax.config.update('jax_enable_x64', True)`` 
+2) Increase the max number of iterations or increase tolerance (if reasonable). These parameters can be specified by providing a ``solver_kwargs`` dictionary. For the available options see the ``self.solver.__init__`` docstrings.
+  warnings.warn(
+scale_400000: 283s peak=5.29GB raw_design=1.14GB classes=11
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+/home/satvik/miniconda3/envs/neurotwin/lib/python3.11/site-packages/nemos/glm/glm.py:751: RuntimeWarning: The fit did not converge. Consider the following:
+1) Enable float64 with ``jax.config.update('jax_enable_x64', True)`` 
+2) Increase the max number of iterations or increase tolerance (if reasonable). These parameters can be specified by providing a ``solver_kwargs`` dictionary. For the available options see the ``self.solver.__init__`` docstrings.
+  warnings.warn(
+scale_800000: 1021s peak=9.49GB raw_design=2.27GB classes=11
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+/home/satvik/miniconda3/envs/neurotwin/lib/python3.11/site-packages/nemos/glm/glm.py:751: RuntimeWarning: The fit did not converge. Consider the following:
+1) Enable float64 with ``jax.config.update('jax_enable_x64', True)`` 
+2) Increase the max number of iterations or increase tolerance (if reasonable). These parameters can be specified by providing a ``solver_kwargs`` dictionary. For the available options see the ``self.solver.__init__`` docstrings.
+  warnings.warn(
+scale_1200000: 1574s peak=13.67GB raw_design=3.41GB classes=11
+=== SWEEP COMPLETE ===

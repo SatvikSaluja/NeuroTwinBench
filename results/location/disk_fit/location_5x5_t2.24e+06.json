@@ -1,0 +1,75 @@
+{
+  "config": {
+    "tstop": 2240000.0,
+    "mesh": [
+      5,
+      5
+    ],
+    "seeds": [
+      2
+    ],
+    "history_ms": 25.0,
+    "n_basis": 5,
+    "n_procs": 4,
+    "regularizer": 0.001,
+    "max_iter": 1500,
+    "out": "results/location/disk_fit",
+    "float32": false,
+    "solver": "DISK_LBFGS",
+    "from_cache": "results/location/production_spikes.npz"
+  },
+  "records": [
+    {
+      "seed": 2,
+      "section": "basal_2",
+      "n": 298,
+      "n_outside_support": 2,
+      "diagnostics": {
+        "function_val": 1.0049455026355334,
+        "num_steps": 474,
+        "converged": true,
+        "optimizer_success": true,
+        "gradient_inf_norm": 9.387679051904716e-07,
+        "reached_max_steps": false,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "solver": "DISK_LBFGS",
+        "precision": "float64",
+        "feature_cache": "cache/disk_features/c181a36ae7f6e35e62329d66",
+        "resume": "parameter-only L-BFGS restart"
+      },
+      "spikes_per_predictor": 21.855372233400402,
+      "latency_status": "exploratory; consult matched latency calibration before interpretation",
+      "weight_spearman": 0.008894797976936666,
+      "sign_accuracy": 0.9630872483221476,
+      "median_true_delay_ms": 1.742908998633458,
+      "median_effective_latency_ms": 5.0,
+      "latency_shift_ms": 3.257091001366542
+    },
+    {
+      "seed": 2,
+      "section": "apical_tuft",
+      "n": 323,
+      "n_outside_support": 2,
+      "diagnostics": {
+        "function_val": 1.0049455026355334,
+        "num_steps": 474,
+        "converged": true,
+        "optimizer_success": true,
+        "gradient_inf_norm": 9.387679051904716e-07,
+        "reached_max_steps": false,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "solver": "DISK_LBFGS",
+        "precision": "float64",
+        "feature_cache": "cache/disk_features/c181a36ae7f6e35e62329d66",
+        "resume": "parameter-only L-BFGS restart"
+      },
+      "spikes_per_predictor": 21.855372233400402,
+      "latency_status": "exploratory; consult matched latency calibration before interpretation",
+      "weight_spearman": 0.5970110532323514,
+      "sign_accuracy": 0.978328173374613,
+      "median_true_delay_ms": 1.742908998633458,
+      "median_effective_latency_ms": 6.0,
+      "latency_shift_ms": 4.2570910013665415
+    }
+  ]
+}

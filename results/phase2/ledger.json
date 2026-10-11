@@ -1,0 +1,10 @@
+{
+  "phase2_existing_uncertainty": {
+    "status": "DONE",
+    "seconds": 100.5943922996521
+  },
+  "phase2_topology_c11_e1000000": {
+    "status": "DONE",
+    "seconds": 38.71777415275574
+  }
+}

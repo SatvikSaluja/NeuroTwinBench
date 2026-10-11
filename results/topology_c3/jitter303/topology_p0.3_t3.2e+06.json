@@ -1,0 +1,197 @@
+{
+  "config": {
+    "tstop": 3200000.0,
+    "mesh": [
+      5,
+      5
+    ],
+    "probability": 0.3,
+    "conn_seeds": [
+      3
+    ],
+    "event_seeds": [
+      2
+    ],
+    "history_ms": 25.0,
+    "n_basis": 5,
+    "n_procs": 4,
+    "regularizer": 0.001,
+    "max_iter": 1500,
+    "out": "results/topology_c3/jitter303",
+    "float32": false,
+    "solver": "DISK_LBFGS",
+    "jitter_seed": 303,
+    "from_cache": "results/topology_c3/production_spikes.npz"
+  },
+  "thinned": [
+    "L2_pyramidal->L2_pyramidal",
+    "L5_pyramidal->L5_pyramidal"
+  ],
+  "records": [
+    {
+      "conn_seed": 3,
+      "event_seed": 2,
+      "jitter_seed": 303,
+      "distance_only_control": {
+        "roc_auc": 0.5127287191726333,
+        "pr_auc": 0.31096402121801836,
+        "n_edges": 354,
+        "n_non_edges": 838,
+        "prevalence": 0.29697986577181207
+      },
+      "delay_distance_strata": {
+        "L2_pyramidal->L2_pyramidal": [
+          {
+            "delay_range_ms": [
+              1.1175190687418637,
+              1.2488488690016821
+            ],
+            "roc_auc": 0.7396889790398917,
+            "pr_auc": 0.6771849235006373,
+            "n_edges": 29,
+            "n_non_edges": 51,
+            "prevalence": 0.3625
+          },
+          {
+            "delay_range_ms": [
+              1.2488488690016821,
+              1.742908998633458
+            ],
+            "roc_auc": 0.5810457516339869,
+            "pr_auc": 0.3557371536061352,
+            "n_edges": 34,
+            "n_non_edges": 90,
+            "prevalence": 0.27419354838709675
+          },
+          {
+            "delay_range_ms": [
+              1.742908998633458,
+              2.718281828459045
+            ],
+            "roc_auc": 0.6210526315789473,
+            "pr_auc": 0.4063818882199187,
+            "n_edges": 37,
+            "n_non_edges": 95,
+            "prevalence": 0.2803030303030303
+          },
+          {
+            "delay_range_ms": [
+              2.718281828459045,
+              4.239496212782251
+            ],
+            "roc_auc": 0.6201451131028596,
+            "pr_auc": 0.4982960420458323,
+            "n_edges": 33,
+            "n_non_edges": 71,
+            "prevalence": 0.3173076923076923
+          },
+          {
+            "delay_range_ms": [
+              4.239496212782251,
+              16.083240672062953
+            ],
+            "roc_auc": 0.5,
+            "pr_auc": 0.28082489996737997,
+            "n_edges": 44,
+            "n_non_edges": 112,
+            "prevalence": 0.28205128205128205
+          }
+        ],
+        "L5_pyramidal->L5_pyramidal": [
+          {
+            "delay_range_ms": [
+              1.1175190687418637,
+              1.2488488690016821
+            ],
+            "roc_auc": 0.7856659905341447,
+            "pr_auc": 0.7372480992616034,
+            "n_edges": 29,
+            "n_non_edges": 51,
+            "prevalence": 0.3625
+          },
+          {
+            "delay_range_ms": [
+              1.2488488690016821,
+              1.742908998633458
+            ],
+            "roc_auc": 0.5166666666666667,
+            "pr_auc": 0.3175630339021362,
+            "n_edges": 34,
+            "n_non_edges": 90,
+            "prevalence": 0.27419354838709675
+          },
+          {
+            "delay_range_ms": [
+              1.742908998633458,
+              2.718281828459045
+            ],
+            "roc_auc": 0.5951635846372689,
+            "pr_auc": 0.39338563055146714,
+            "n_edges": 37,
+            "n_non_edges": 95,
+            "prevalence": 0.2803030303030303
+          },
+          {
+            "delay_range_ms": [
+              2.718281828459045,
+              4.239496212782251
+            ],
+            "roc_auc": 0.47930004268032433,
+            "pr_auc": 0.3847580642412687,
+            "n_edges": 33,
+            "n_non_edges": 71,
+            "prevalence": 0.3173076923076923
+          },
+          {
+            "delay_range_ms": [
+              4.239496212782251,
+              16.083240672062953
+            ],
+            "roc_auc": 0.4624594155844156,
+            "pr_auc": 0.25796241944386533,
+            "n_edges": 44,
+            "n_non_edges": 112,
+            "prevalence": 0.28205128205128205
+          }
+        ]
+      },
+      "spikes_per_predictor": 20.135935613682094,
+      "diagnostics": {
+        "function_val": 1.065025976268632,
+        "num_steps": 251,
+        "converged": true,
+        "optimizer_success": true,
+        "gradient_inf_norm": 6.250816396953651e-07,
+        "reached_max_steps": false,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "solver": "DISK_LBFGS",
+        "precision": "float64",
+        "feature_cache": "cache/disk_features/a164bf357104cf636e2503f3",
+        "resume": "parameter-only L-BFGS restart"
+      },
+      "per_projection": {
+        "L2_pyramidal->L2_pyramidal": {
+          "roc_auc": 0.5933551771098796,
+          "pr_auc": 0.41096285706150665,
+          "n_edges": 177,
+          "n_non_edges": 419,
+          "prevalence": 0.29697986577181207
+        },
+        "L5_pyramidal->L5_pyramidal": {
+          "roc_auc": 0.5466472499764033,
+          "pr_auc": 0.40291191768625095,
+          "n_edges": 177,
+          "n_non_edges": 419,
+          "prevalence": 0.29697986577181207
+        }
+      },
+      "eligibility": "unthinned counterfactual delays; identical rule for edges and non-edges",
+      "interpretation": "Exploratory detection; distance-matched and jitter controls still required for a synaptic-recovery claim.",
+      "roc_auc": 0.5517609859363835,
+      "pr_auc": 0.3688176055692581,
+      "n_edges": 354,
+      "n_non_edges": 838,
+      "prevalence": 0.29697986577181207
+    }
+  ]
+}

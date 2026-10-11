@@ -1,0 +1,439 @@
+{
+  "tasks": [
+    {
+      "name": "topology_c3_disk",
+      "variant": "topology",
+      "conn_seed": 3
+    },
+    {
+      "name": "topology_c4_disk",
+      "variant": "topology",
+      "conn_seed": 4
+    },
+    {
+      "name": "location_disk",
+      "variant": "location"
+    },
+    {
+      "name": "design_pilot_location_swap",
+      "args": [
+        "experiments/design_pilots.py",
+        "--kind",
+        "location_swap"
+      ]
+    },
+    {
+      "name": "design_pilot_shared",
+      "args": [
+        "experiments/design_pilots.py",
+        "--kind",
+        "shared"
+      ]
+    },
+    {
+      "name": "topology_c3_jitter101",
+      "args": [
+        "experiments/topology.py",
+        "--probability",
+        ".3",
+        "--conn-seeds",
+        "3",
+        "--event-seeds",
+        "2",
+        "--from-cache",
+        "results/topology_c3/production_spikes.npz",
+        "--out",
+        "results/topology_c3/jitter101",
+        "--solver",
+        "DISK_LBFGS",
+        "--no-float32",
+        "--max-iter",
+        "1500",
+        "--jitter-seed",
+        "101"
+      ]
+    },
+    {
+      "name": "topology_c3_jitter202",
+      "args": [
+        "experiments/topology.py",
+        "--probability",
+        ".3",
+        "--conn-seeds",
+        "3",
+        "--event-seeds",
+        "2",
+        "--from-cache",
+        "results/topology_c3/production_spikes.npz",
+        "--out",
+        "results/topology_c3/jitter202",
+        "--solver",
+        "DISK_LBFGS",
+        "--no-float32",
+        "--max-iter",
+        "1500",
+        "--jitter-seed",
+        "202"
+      ]
+    },
+    {
+      "name": "topology_c3_jitter303",
+      "args": [
+        "experiments/topology.py",
+        "--probability",
+        ".3",
+        "--conn-seeds",
+        "3",
+        "--event-seeds",
+        "2",
+        "--from-cache",
+        "results/topology_c3/production_spikes.npz",
+        "--out",
+        "results/topology_c3/jitter303",
+        "--solver",
+        "DISK_LBFGS",
+        "--no-float32",
+        "--max-iter",
+        "1500",
+        "--jitter-seed",
+        "303"
+      ]
+    },
+    {
+      "name": "topology_c4_jitter101",
+      "args": [
+        "experiments/topology.py",
+        "--probability",
+        ".3",
+        "--conn-seeds",
+        "4",
+        "--event-seeds",
+        "2",
+        "--from-cache",
+        "results/topology_c4/production_spikes.npz",
+        "--out",
+        "results/topology_c4/jitter101",
+        "--solver",
+        "DISK_LBFGS",
+        "--no-float32",
+        "--max-iter",
+        "1500",
+        "--jitter-seed",
+        "101"
+      ]
+    },
+    {
+      "name": "topology_c4_jitter202",
+      "args": [
+        "experiments/topology.py",
+        "--probability",
+        ".3",
+        "--conn-seeds",
+        "4",
+        "--event-seeds",
+        "2",
+        "--from-cache",
+        "results/topology_c4/production_spikes.npz",
+        "--out",
+        "results/topology_c4/jitter202",
+        "--solver",
+        "DISK_LBFGS",
+        "--no-float32",
+        "--max-iter",
+        "1500",
+        "--jitter-seed",
+        "202"
+      ]
+    },
+    {
+      "name": "topology_c4_jitter303",
+      "args": [
+        "experiments/topology.py",
+        "--probability",
+        ".3",
+        "--conn-seeds",
+        "4",
+        "--event-seeds",
+        "2",
+        "--from-cache",
+        "results/topology_c4/production_spikes.npz",
+        "--out",
+        "results/topology_c4/jitter303",
+        "--solver",
+        "DISK_LBFGS",
+        "--no-float32",
+        "--max-iter",
+        "1500",
+        "--jitter-seed",
+        "303"
+      ]
+    },
+    {
+      "name": "proxy_s100_full",
+      "args": [
+        "experiments/grid.py",
+        "--from-cache",
+        "results/production_spikes.npz",
+        "--seeds",
+        "100",
+        "--out",
+        "results/seed100/disk_proxy",
+        "--cell",
+        "full",
+        "proxy",
+        "--solver",
+        "DISK_LBFGS",
+        "--no-float32",
+        "--max-iter",
+        "1500"
+      ]
+    },
+    {
+      "name": "proxy_s100_interneurons_hidden",
+      "args": [
+        "experiments/grid.py",
+        "--from-cache",
+        "results/production_spikes.npz",
+        "--seeds",
+        "100",
+        "--out",
+        "results/seed100/disk_proxy",
+        "--cell",
+        "interneurons_hidden",
+        "proxy",
+        "--solver",
+        "DISK_LBFGS",
+        "--no-float32",
+        "--max-iter",
+        "1500"
+      ]
+    },
+    {
+      "name": "proxy_s100_random_subsample",
+      "args": [
+        "experiments/grid.py",
+        "--from-cache",
+        "results/production_spikes.npz",
+        "--seeds",
+        "100",
+        "--out",
+        "results/seed100/disk_proxy",
+        "--cell",
+        "random_subsample",
+        "proxy",
+        "--solver",
+        "DISK_LBFGS",
+        "--no-float32",
+        "--max-iter",
+        "1500"
+      ]
+    },
+    {
+      "name": "proxy_s200_full",
+      "args": [
+        "experiments/grid.py",
+        "--from-cache",
+        "results/seed200/production_spikes.npz",
+        "--seeds",
+        "200",
+        "--out",
+        "results/seed200/disk_proxy",
+        "--cell",
+        "full",
+        "proxy",
+        "--solver",
+        "DISK_LBFGS",
+        "--no-float32",
+        "--max-iter",
+        "1500"
+      ]
+    },
+    {
+      "name": "proxy_s200_interneurons_hidden",
+      "args": [
+        "experiments/grid.py",
+        "--from-cache",
+        "results/seed200/production_spikes.npz",
+        "--seeds",
+        "200",
+        "--out",
+        "results/seed200/disk_proxy",
+        "--cell",
+        "interneurons_hidden",
+        "proxy",
+        "--solver",
+        "DISK_LBFGS",
+        "--no-float32",
+        "--max-iter",
+        "1500"
+      ]
+    },
+    {
+      "name": "proxy_s200_random_subsample",
+      "args": [
+        "experiments/grid.py",
+        "--from-cache",
+        "results/seed200/production_spikes.npz",
+        "--seeds",
+        "200",
+        "--out",
+        "results/seed200/disk_proxy",
+        "--cell",
+        "random_subsample",
+        "proxy",
+        "--solver",
+        "DISK_LBFGS",
+        "--no-float32",
+        "--max-iter",
+        "1500"
+      ]
+    },
+    {
+      "name": "proxy_s300_full",
+      "args": [
+        "experiments/grid.py",
+        "--from-cache",
+        "results/seed300/production_spikes.npz",
+        "--seeds",
+        "300",
+        "--out",
+        "results/seed300/disk_proxy",
+        "--cell",
+        "full",
+        "proxy",
+        "--solver",
+        "DISK_LBFGS",
+        "--no-float32",
+        "--max-iter",
+        "1500"
+      ]
+    },
+    {
+      "name": "proxy_s300_interneurons_hidden",
+      "args": [
+        "experiments/grid.py",
+        "--from-cache",
+        "results/seed300/production_spikes.npz",
+        "--seeds",
+        "300",
+        "--out",
+        "results/seed300/disk_proxy",
+        "--cell",
+        "interneurons_hidden",
+        "proxy",
+        "--solver",
+        "DISK_LBFGS",
+        "--no-float32",
+        "--max-iter",
+        "1500"
+      ]
+    },
+    {
+      "name": "proxy_s300_random_subsample",
+      "args": [
+        "experiments/grid.py",
+        "--from-cache",
+        "results/seed300/production_spikes.npz",
+        "--seeds",
+        "300",
+        "--out",
+        "results/seed300/disk_proxy",
+        "--cell",
+        "random_subsample",
+        "proxy",
+        "--solver",
+        "DISK_LBFGS",
+        "--no-float32",
+        "--max-iter",
+        "1500"
+      ]
+    },
+    {
+      "name": "calibration5_s0",
+      "args": [
+        "experiments/calibrate.py",
+        "--duration",
+        "300",
+        "--n-basis",
+        "5",
+        "--seed",
+        "0",
+        "--out",
+        "results/calibration5/seed0"
+      ]
+    },
+    {
+      "name": "latency5_f64_s0",
+      "args": [
+        "experiments/latency_calibration.py",
+        "--duration",
+        "300",
+        "--n-basis",
+        "5",
+        "--seed",
+        "0",
+        "--no-float32",
+        "--out",
+        "results/latency_f64/seed0"
+      ]
+    },
+    {
+      "name": "calibration5_s1",
+      "args": [
+        "experiments/calibrate.py",
+        "--duration",
+        "300",
+        "--n-basis",
+        "5",
+        "--seed",
+        "1",
+        "--out",
+        "results/calibration5/seed1"
+      ]
+    },
+    {
+      "name": "latency5_f64_s1",
+      "args": [
+        "experiments/latency_calibration.py",
+        "--duration",
+        "300",
+        "--n-basis",
+        "5",
+        "--seed",
+        "1",
+        "--no-float32",
+        "--out",
+        "results/latency_f64/seed1"
+      ]
+    },
+    {
+      "name": "calibration5_s2",
+      "args": [
+        "experiments/calibrate.py",
+        "--duration",
+        "300",
+        "--n-basis",
+        "5",
+        "--seed",
+        "2",
+        "--out",
+        "results/calibration5/seed2"
+      ]
+    },
+    {
+      "name": "latency5_f64_s2",
+      "args": [
+        "experiments/latency_calibration.py",
+        "--duration",
+        "300",
+        "--n-basis",
+        "5",
+        "--seed",
+        "2",
+        "--no-float32",
+        "--out",
+        "results/latency_f64/seed2"
+      ]
+    }
+  ]
+}

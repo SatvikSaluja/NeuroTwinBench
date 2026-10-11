@@ -1,0 +1,43 @@
+{
+  "config": {
+    "duration": 300.0,
+    "neurons": 20,
+    "history_ms": 25.0,
+    "n_basis": 5,
+    "strength": 0.15,
+    "float32": false,
+    "max_iter": 500,
+    "regularizer": 0.001,
+    "seed": 0,
+    "out": "results/latency_f64/seed0"
+  },
+  "complete": false,
+  "rows": [
+    [
+      1,
+      3.5,
+      2.2462964521329445
+    ],
+    [
+      2,
+      4.0,
+      2.055389292609874
+    ],
+    [
+      4,
+      4.0,
+      1.6455700554463721
+    ],
+    [
+      7,
+      6.0,
+      1.4888086936920129
+    ]
+  ],
+  "last_diagnostics": {
+    "function_val": 0.9897827639974865,
+    "num_steps": 22,
+    "converged": true,
+    "reached_max_steps": false
+  }
+}

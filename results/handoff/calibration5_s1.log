@@ -1,0 +1,20 @@
+
+START Tue Sep 29 13:49:35 2026 ['/home/satvik/miniconda3/envs/neurotwin/bin/python', 'experiments/calibrate.py', '--duration', '300', '--n-basis', '5', '--seed', '1', '--out', 'results/calibration5/seed1']
+generating 20 neurons x 300s ...
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+  53126 spikes | 7.9-11.1 Hz | 123 true connections
+fitting population GLM ...
+fitting jitter null ...
+fitting pairwise GLM baseline ...
+computing CCG baseline ...
+
+estimator               rho     sign   latency err
+--------------------------------------------------
+population GLM       +0.797     99%         1.63ms
+pairwise GLM         +0.789     99%          nanms
+CCG baseline         +0.641     93%          nanms
+jitter null          +0.139     63%          nanms
+
+wrote results/calibration5/seed1/calibration_n20_t300_s1.json
+
+PASS: population GLM clears its jitter null.

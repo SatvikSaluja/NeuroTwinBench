@@ -1,0 +1,12 @@
+{
+  "pid": 82671,
+  "command": [
+    "taskset",
+    "-c",
+    "0-3",
+    "/home/satvik/miniconda3/envs/neurotwin/bin/python",
+    "-u",
+    "experiments/run_phase2.py"
+  ],
+  "started_unix": 1790698039.3709629
+}

@@ -1,0 +1,613 @@
+{
+  "config": {
+    "cache": "/home/satvik/hnn_neuro_bridge/results/seed200/production_spikes.npz",
+    "cache_size": 2131680,
+    "cache_mtime_ns": 1790236498834958778,
+    "seed": 200,
+    "mesh": [
+      5,
+      5
+    ],
+    "n_basis": 5,
+    "history_ms": 25.0,
+    "regularizer": 0.001,
+    "max_iter": 500,
+    "float32": true,
+    "solver": "LBFGS",
+    "schema": 2,
+    "jitter_width_history_multiple": 2,
+    "jitter_seed": 201,
+    "pairwise_drive": "true"
+  },
+  "result": {
+    "per_class": {
+      "L2_basket->L2_basket|gabaa|soma": {
+        "weight_spearman": null,
+        "sign_accuracy": 0.1111111111111111,
+        "n_evaluated": 90,
+        "n_outside_support": 0,
+        "n_unestimable": 0,
+        "weight_cv": 0.016868665037399554,
+        "rank_informative": false,
+        "interpretation": "total pair influence compared with this anatomical class"
+      },
+      "L2_basket->L2_pyramidal|gabaa|soma": {
+        "weight_spearman": null,
+        "sign_accuracy": 0.016,
+        "n_evaluated": 250,
+        "n_outside_support": 0,
+        "n_unestimable": 0,
+        "weight_cv": 0.002728804029282839,
+        "rank_informative": false,
+        "interpretation": "total pair influence compared with this anatomical class"
+      },
+      "L2_basket->L2_pyramidal|gabab|soma": {
+        "weight_spearman": null,
+        "sign_accuracy": 0.016,
+        "n_evaluated": 250,
+        "n_outside_support": 0,
+        "n_unestimable": 0,
+        "weight_cv": 0.002728804029282839,
+        "rank_informative": false,
+        "interpretation": "total pair influence compared with this anatomical class"
+      },
+      "L2_basket->L5_pyramidal|gabaa|distal": {
+        "weight_spearman": null,
+        "sign_accuracy": 0.0,
+        "n_evaluated": 250,
+        "n_outside_support": 0,
+        "n_unestimable": 0,
+        "weight_cv": 0.0027288040292828405,
+        "rank_informative": false,
+        "interpretation": "total pair influence compared with this anatomical class"
+      },
+      "L2_pyramidal->L2_basket|ampa|soma": {
+        "weight_spearman": 0.6843606098961713,
+        "sign_accuracy": 1.0,
+        "n_evaluated": 248,
+        "n_outside_support": 2,
+        "n_unestimable": 0,
+        "weight_cv": 0.5691501242199929,
+        "rank_informative": true,
+        "interpretation": "total pair influence compared with this anatomical class"
+      },
+      "L2_pyramidal->L2_pyramidal|ampa|proximal": {
+        "weight_spearman": 0.05108190250861476,
+        "sign_accuracy": 1.0,
+        "n_evaluated": 596,
+        "n_outside_support": 4,
+        "n_unestimable": 0,
+        "weight_cv": 0.5353708473397565,
+        "rank_informative": true,
+        "interpretation": "total pair influence compared with this anatomical class"
+      },
+      "L2_pyramidal->L2_pyramidal|nmda|proximal": {
+        "weight_spearman": 0.05108190250861476,
+        "sign_accuracy": 1.0,
+        "n_evaluated": 596,
+        "n_outside_support": 4,
+        "n_unestimable": 0,
+        "weight_cv": 0.5353708473397565,
+        "rank_informative": true,
+        "interpretation": "total pair influence compared with this anatomical class"
+      },
+      "L2_pyramidal->L5_basket|ampa|soma": {
+        "weight_spearman": 0.584430715264082,
+        "sign_accuracy": 1.0,
+        "n_evaluated": 248,
+        "n_outside_support": 2,
+        "n_unestimable": 0,
+        "weight_cv": 0.5691501242199929,
+        "rank_informative": true,
+        "interpretation": "total pair influence compared with this anatomical class"
+      },
+      "L2_pyramidal->L5_pyramidal|ampa|distal": {
+        "weight_spearman": 0.319423973066291,
+        "sign_accuracy": 1.0,
+        "n_evaluated": 621,
+        "n_outside_support": 4,
+        "n_unestimable": 0,
+        "weight_cv": 0.5402554066162026,
+        "rank_informative": true,
+        "interpretation": "total pair influence compared with this anatomical class"
+      },
+      "L2_pyramidal->L5_pyramidal|ampa|proximal": {
+        "weight_spearman": 0.319423973066291,
+        "sign_accuracy": 1.0,
+        "n_evaluated": 621,
+        "n_outside_support": 4,
+        "n_unestimable": 0,
+        "weight_cv": 0.5402554066162026,
+        "rank_informative": true,
+        "interpretation": "total pair influence compared with this anatomical class"
+      },
+      "L5_basket->L5_basket|gabaa|soma": {
+        "weight_spearman": null,
+        "sign_accuracy": 0.12222222222222222,
+        "n_evaluated": 90,
+        "n_outside_support": 0,
+        "n_unestimable": 0,
+        "weight_cv": 0.016868665037399554,
+        "rank_informative": false,
+        "interpretation": "total pair influence compared with this anatomical class"
+      },
+      "L5_basket->L5_pyramidal|gabaa|soma": {
+        "weight_spearman": null,
+        "sign_accuracy": 0.0,
+        "n_evaluated": 250,
+        "n_outside_support": 0,
+        "n_unestimable": 0,
+        "weight_cv": 0.0013930530798423157,
+        "rank_informative": false,
+        "interpretation": "total pair influence compared with this anatomical class"
+      },
+      "L5_basket->L5_pyramidal|gabab|soma": {
+        "weight_spearman": null,
+        "sign_accuracy": 0.0,
+        "n_evaluated": 250,
+        "n_outside_support": 0,
+        "n_unestimable": 0,
+        "weight_cv": 0.0013930530798423157,
+        "rank_informative": false,
+        "interpretation": "total pair influence compared with this anatomical class"
+      },
+      "L5_pyramidal->L5_basket|ampa|soma": {
+        "weight_spearman": 0.3753796264952117,
+        "sign_accuracy": 1.0,
+        "n_evaluated": 248,
+        "n_outside_support": 2,
+        "n_unestimable": 0,
+        "weight_cv": 0.5691501242199929,
+        "rank_informative": true,
+        "interpretation": "total pair influence compared with this anatomical class"
+      },
+      "L5_pyramidal->L5_pyramidal|ampa|proximal": {
+        "weight_spearman": 0.4690025078481521,
+        "sign_accuracy": 1.0,
+        "n_evaluated": 596,
+        "n_outside_support": 4,
+        "n_unestimable": 0,
+        "weight_cv": 0.5353708473397565,
+        "rank_informative": true,
+        "interpretation": "total pair influence compared with this anatomical class"
+      },
+      "L5_pyramidal->L5_pyramidal|nmda|proximal": {
+        "weight_spearman": 0.4690025078481521,
+        "sign_accuracy": 1.0,
+        "n_evaluated": 596,
+        "n_outside_support": 4,
+        "n_unestimable": 0,
+        "weight_cv": 0.5353708473397565,
+        "rank_informative": true,
+        "interpretation": "total pair influence compared with this anatomical class"
+      }
+    },
+    "seconds": 13528.370686531067,
+    "diagnostics": {
+      "per_source": {
+        "0": {
+          "function_val": 1.5721231698989868,
+          "num_steps": 275,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "1": {
+          "function_val": 1.5619686841964722,
+          "num_steps": 295,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "2": {
+          "function_val": 1.539815902709961,
+          "num_steps": 330,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "3": {
+          "function_val": 1.5618586540222168,
+          "num_steps": 293,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "4": {
+          "function_val": 1.5534826517105103,
+          "num_steps": 312,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "5": {
+          "function_val": 1.5294829607009888,
+          "num_steps": 323,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "6": {
+          "function_val": 1.539006233215332,
+          "num_steps": 297,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "7": {
+          "function_val": 1.561995506286621,
+          "num_steps": 302,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "8": {
+          "function_val": 1.5719830989837646,
+          "num_steps": 281,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "9": {
+          "function_val": 1.5615355968475342,
+          "num_steps": 296,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "10": {
+          "function_val": 1.5443576574325562,
+          "num_steps": 305,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "11": {
+          "function_val": 1.5257132053375244,
+          "num_steps": 325,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "12": {
+          "function_val": 1.5130987167358398,
+          "num_steps": 328,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "13": {
+          "function_val": 1.5255019664764404,
+          "num_steps": 294,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "14": {
+          "function_val": 1.5448511838912964,
+          "num_steps": 306,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "15": {
+          "function_val": 1.525911569595337,
+          "num_steps": 311,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "16": {
+          "function_val": 1.4801994562149048,
+          "num_steps": 334,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "17": {
+          "function_val": 1.4586035013198853,
+          "num_steps": 365,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "18": {
+          "function_val": 1.4793626070022583,
+          "num_steps": 302,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "19": {
+          "function_val": 1.5254812240600586,
+          "num_steps": 321,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "20": {
+          "function_val": 1.5139939785003662,
+          "num_steps": 291,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "21": {
+          "function_val": 1.4596914052963257,
+          "num_steps": 330,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "22": {
+          "function_val": 1.4410512447357178,
+          "num_steps": 307,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "23": {
+          "function_val": 1.4586225748062134,
+          "num_steps": 296,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "24": {
+          "function_val": 1.5128068923950195,
+          "num_steps": 261,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "25": {
+          "function_val": 1.5271434783935547,
+          "num_steps": 291,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "26": {
+          "function_val": 1.483728289604187,
+          "num_steps": 303,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "27": {
+          "function_val": 1.4620143175125122,
+          "num_steps": 301,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "28": {
+          "function_val": 1.4835010766983032,
+          "num_steps": 325,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "29": {
+          "function_val": 1.5270222425460815,
+          "num_steps": 289,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "30": {
+          "function_val": 1.5450865030288696,
+          "num_steps": 319,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "31": {
+          "function_val": 1.5268923044204712,
+          "num_steps": 312,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "32": {
+          "function_val": 1.512791633605957,
+          "num_steps": 303,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "33": {
+          "function_val": 1.526585578918457,
+          "num_steps": 298,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "34": {
+          "function_val": 1.5454612970352173,
+          "num_steps": 279,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "35": {
+          "function_val": 1.578118920326233,
+          "num_steps": 274,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "36": {
+          "function_val": 1.565955400466919,
+          "num_steps": 296,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "37": {
+          "function_val": 1.538616418838501,
+          "num_steps": 309,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "38": {
+          "function_val": 1.565430998802185,
+          "num_steps": 298,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "39": {
+          "function_val": 1.556283712387085,
+          "num_steps": 283,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "40": {
+          "function_val": 1.5296753644943237,
+          "num_steps": 322,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "41": {
+          "function_val": 1.5382075309753418,
+          "num_steps": 314,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "42": {
+          "function_val": 1.5655968189239502,
+          "num_steps": 321,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "43": {
+          "function_val": 1.5781160593032837,
+          "num_steps": 282,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "44": {
+          "function_val": 1.5661544799804688,
+          "num_steps": 284,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "45": {
+          "function_val": 1.5800342559814453,
+          "num_steps": 276,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "46": {
+          "function_val": 1.5666637420654297,
+          "num_steps": 259,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "47": {
+          "function_val": 1.554287314414978,
+          "num_steps": 304,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "48": {
+          "function_val": 1.567046880722046,
+          "num_steps": 311,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "49": {
+          "function_val": 1.579986810684204,
+          "num_steps": 301,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "50": {
+          "function_val": 1.567407488822937,
+          "num_steps": 291,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "51": {
+          "function_val": 1.5262244939804077,
+          "num_steps": 309,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "52": {
+          "function_val": 1.5138312578201294,
+          "num_steps": 312,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "53": {
+          "function_val": 1.525973916053772,
+          "num_steps": 331,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "54": {
+          "function_val": 1.5673692226409912,
+          "num_steps": 316,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "55": {
+          "function_val": 1.557615876197815,
+          "num_steps": 305,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "56": {
+          "function_val": 1.5152924060821533,
+          "num_steps": 327,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "57": {
+          "function_val": 1.501958966255188,
+          "num_steps": 320,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "58": {
+          "function_val": 1.5149370431900024,
+          "num_steps": 334,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "59": {
+          "function_val": 1.5577706098556519,
+          "num_steps": 304,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "60": {
+          "function_val": 1.5695362091064453,
+          "num_steps": 306,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "61": {
+          "function_val": 1.5284216403961182,
+          "num_steps": 330,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "62": {
+          "function_val": 1.5149238109588623,
+          "num_steps": 341,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "63": {
+          "function_val": 1.5280660390853882,
+          "num_steps": 314,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "64": {
+          "function_val": 1.5688515901565552,
+          "num_steps": 276,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "65": {
+          "function_val": 1.5798225402832031,
+          "num_steps": 268,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "66": {
+          "function_val": 1.5678541660308838,
+          "num_steps": 288,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "67": {
+          "function_val": 1.5580235719680786,
+          "num_steps": 302,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "68": {
+          "function_val": 1.5673725605010986,
+          "num_steps": 274,
+          "converged": true,
+          "reached_max_steps": false
+        },
+        "69": {
+          "function_val": 1.5797979831695557,
+          "num_steps": 275,
+          "converged": true,
+          "reached_max_steps": false
+        }
+      },
+      "converged": true
+    },
+    "peak_rss_gib": 7.712005615234375
+  }
+}

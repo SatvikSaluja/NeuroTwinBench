@@ -1,0 +1,72 @@
+{
+  "config": {
+    "duration": 300.0,
+    "neurons": 20,
+    "history_ms": 25.0,
+    "n_basis": 5,
+    "strength": 0.15,
+    "float32": false,
+    "max_iter": 500,
+    "regularizer": 0.001,
+    "seed": 2,
+    "out": "results/latency_f64/seed2"
+  },
+  "basis_peak_lags_ms": [
+    1,
+    2,
+    4,
+    7
+  ],
+  "complete": true,
+  "all_converged": true,
+  "diagnostics": [
+    {
+      "function_val": 0.9361798297803242,
+      "num_steps": 21,
+      "converged": true,
+      "reached_max_steps": false
+    },
+    {
+      "function_val": 0.9375384541963315,
+      "num_steps": 22,
+      "converged": true,
+      "reached_max_steps": false
+    },
+    {
+      "function_val": 0.963074729597363,
+      "num_steps": 21,
+      "converged": true,
+      "reached_max_steps": false
+    },
+    {
+      "function_val": 0.9964989941471158,
+      "num_steps": 22,
+      "converged": true,
+      "reached_max_steps": false
+    }
+  ],
+  "criterion": "adjacent recovered median gap exceeds hypotenuse of across-edge SDs; descriptive, one seed",
+  "per_lag": [
+    {
+      "true_lag_ms": 1,
+      "recovered_median_ms": 3.0,
+      "recovered_sd_ms": 2.185349954235382
+    },
+    {
+      "true_lag_ms": 2,
+      "recovered_median_ms": 3.0,
+      "recovered_sd_ms": 2.099796209327847
+    },
+    {
+      "true_lag_ms": 4,
+      "recovered_median_ms": 4.0,
+      "recovered_sd_ms": 1.5125214457419585
+    },
+    {
+      "true_lag_ms": 7,
+      "recovered_median_ms": 6.0,
+      "recovered_sd_ms": 1.6325417323316336
+    }
+  ],
+  "smallest_resolved_separation_ms": null
+}

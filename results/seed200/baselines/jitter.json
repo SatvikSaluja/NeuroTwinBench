@@ -1,0 +1,194 @@
+{
+  "config": {
+    "cache": "/home/satvik/hnn_neuro_bridge/results/seed200/production_spikes.npz",
+    "cache_size": 2131680,
+    "cache_mtime_ns": 1790236498834958778,
+    "seed": 200,
+    "mesh": [
+      5,
+      5
+    ],
+    "n_basis": 5,
+    "history_ms": 25.0,
+    "regularizer": 0.001,
+    "max_iter": 500,
+    "float32": true,
+    "solver": "LBFGS",
+    "schema": 2,
+    "jitter_width_history_multiple": 2,
+    "jitter_seed": 201,
+    "pairwise_drive": "true"
+  },
+  "result": {
+    "per_class": {
+      "L2_basket->L2_basket|gabaa|soma": {
+        "weight_spearman": null,
+        "sign_accuracy": 0.0,
+        "n_evaluated": 90,
+        "n_outside_support": 0,
+        "n_unestimable": 0,
+        "weight_cv": 0.016868665037399554,
+        "rank_informative": false,
+        "interpretation": "total pair influence compared with this anatomical class"
+      },
+      "L2_basket->L2_pyramidal|gabaa|soma": {
+        "weight_spearman": null,
+        "sign_accuracy": 0.0,
+        "n_evaluated": 250,
+        "n_outside_support": 0,
+        "n_unestimable": 0,
+        "weight_cv": 0.002728804029282839,
+        "rank_informative": false,
+        "interpretation": "total pair influence compared with this anatomical class"
+      },
+      "L2_basket->L2_pyramidal|gabab|soma": {
+        "weight_spearman": null,
+        "sign_accuracy": 0.0,
+        "n_evaluated": 250,
+        "n_outside_support": 0,
+        "n_unestimable": 0,
+        "weight_cv": 0.002728804029282839,
+        "rank_informative": false,
+        "interpretation": "total pair influence compared with this anatomical class"
+      },
+      "L2_basket->L5_pyramidal|gabaa|distal": {
+        "weight_spearman": null,
+        "sign_accuracy": 0.0,
+        "n_evaluated": 250,
+        "n_outside_support": 0,
+        "n_unestimable": 0,
+        "weight_cv": 0.0027288040292828405,
+        "rank_informative": false,
+        "interpretation": "total pair influence compared with this anatomical class"
+      },
+      "L2_pyramidal->L2_basket|ampa|soma": {
+        "weight_spearman": 0.5924298328854692,
+        "sign_accuracy": 1.0,
+        "n_evaluated": 248,
+        "n_outside_support": 2,
+        "n_unestimable": 0,
+        "weight_cv": 0.5691501242199929,
+        "rank_informative": true,
+        "interpretation": "total pair influence compared with this anatomical class"
+      },
+      "L2_pyramidal->L2_pyramidal|ampa|proximal": {
+        "weight_spearman": 0.45732200880124774,
+        "sign_accuracy": 1.0,
+        "n_evaluated": 596,
+        "n_outside_support": 4,
+        "n_unestimable": 0,
+        "weight_cv": 0.5353708473397565,
+        "rank_informative": true,
+        "interpretation": "total pair influence compared with this anatomical class"
+      },
+      "L2_pyramidal->L2_pyramidal|nmda|proximal": {
+        "weight_spearman": 0.45732200880124774,
+        "sign_accuracy": 1.0,
+        "n_evaluated": 596,
+        "n_outside_support": 4,
+        "n_unestimable": 0,
+        "weight_cv": 0.5353708473397565,
+        "rank_informative": true,
+        "interpretation": "total pair influence compared with this anatomical class"
+      },
+      "L2_pyramidal->L5_basket|ampa|soma": {
+        "weight_spearman": 0.581216131365945,
+        "sign_accuracy": 1.0,
+        "n_evaluated": 248,
+        "n_outside_support": 2,
+        "n_unestimable": 0,
+        "weight_cv": 0.5691501242199929,
+        "rank_informative": true,
+        "interpretation": "total pair influence compared with this anatomical class"
+      },
+      "L2_pyramidal->L5_pyramidal|ampa|distal": {
+        "weight_spearman": 0.530870039678475,
+        "sign_accuracy": 1.0,
+        "n_evaluated": 621,
+        "n_outside_support": 4,
+        "n_unestimable": 0,
+        "weight_cv": 0.5402554066162026,
+        "rank_informative": true,
+        "interpretation": "total pair influence compared with this anatomical class"
+      },
+      "L2_pyramidal->L5_pyramidal|ampa|proximal": {
+        "weight_spearman": 0.530870039678475,
+        "sign_accuracy": 1.0,
+        "n_evaluated": 621,
+        "n_outside_support": 4,
+        "n_unestimable": 0,
+        "weight_cv": 0.5402554066162026,
+        "rank_informative": true,
+        "interpretation": "total pair influence compared with this anatomical class"
+      },
+      "L5_basket->L5_basket|gabaa|soma": {
+        "weight_spearman": null,
+        "sign_accuracy": 0.0,
+        "n_evaluated": 90,
+        "n_outside_support": 0,
+        "n_unestimable": 0,
+        "weight_cv": 0.016868665037399554,
+        "rank_informative": false,
+        "interpretation": "total pair influence compared with this anatomical class"
+      },
+      "L5_basket->L5_pyramidal|gabaa|soma": {
+        "weight_spearman": null,
+        "sign_accuracy": 0.0,
+        "n_evaluated": 250,
+        "n_outside_support": 0,
+        "n_unestimable": 0,
+        "weight_cv": 0.0013930530798423157,
+        "rank_informative": false,
+        "interpretation": "total pair influence compared with this anatomical class"
+      },
+      "L5_basket->L5_pyramidal|gabab|soma": {
+        "weight_spearman": null,
+        "sign_accuracy": 0.0,
+        "n_evaluated": 250,
+        "n_outside_support": 0,
+        "n_unestimable": 0,
+        "weight_cv": 0.0013930530798423157,
+        "rank_informative": false,
+        "interpretation": "total pair influence compared with this anatomical class"
+      },
+      "L5_pyramidal->L5_basket|ampa|soma": {
+        "weight_spearman": 0.5296602910229921,
+        "sign_accuracy": 1.0,
+        "n_evaluated": 248,
+        "n_outside_support": 2,
+        "n_unestimable": 0,
+        "weight_cv": 0.5691501242199929,
+        "rank_informative": true,
+        "interpretation": "total pair influence compared with this anatomical class"
+      },
+      "L5_pyramidal->L5_pyramidal|ampa|proximal": {
+        "weight_spearman": 0.642162585465571,
+        "sign_accuracy": 1.0,
+        "n_evaluated": 596,
+        "n_outside_support": 4,
+        "n_unestimable": 0,
+        "weight_cv": 0.5353708473397565,
+        "rank_informative": true,
+        "interpretation": "total pair influence compared with this anatomical class"
+      },
+      "L5_pyramidal->L5_pyramidal|nmda|proximal": {
+        "weight_spearman": 0.642162585465571,
+        "sign_accuracy": 1.0,
+        "n_evaluated": 596,
+        "n_outside_support": 4,
+        "n_unestimable": 0,
+        "weight_cv": 0.5353708473397565,
+        "rank_informative": true,
+        "interpretation": "total pair influence compared with this anatomical class"
+      }
+    },
+    "seconds": 1575.2953832149506,
+    "diagnostics": {
+      "function_val": 1.4597246646881104,
+      "num_steps": 383,
+      "converged": true,
+      "reached_max_steps": false
+    },
+    "peak_rss_gib": 18.232627868652344
+  }
+}

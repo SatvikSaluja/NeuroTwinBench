@@ -1,0 +1,2 @@
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+x64=True: 2815s peak_rss=11.0GB rho=+0.0979 sign=0.830 n=3497

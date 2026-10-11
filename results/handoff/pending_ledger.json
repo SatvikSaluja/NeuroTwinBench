@@ -1,0 +1,567 @@
+{
+  "topology_c3_disk": {
+    "status": "DONE",
+    "seconds": 2825.784008741379,
+    "task": {
+      "name": "topology_c3_disk",
+      "variant": "topology",
+      "conn_seed": 3
+    },
+    "updated_unix": 1790595672.3484795
+  },
+  "topology_c4_disk": {
+    "status": "DONE",
+    "seconds": 13522.269865989685,
+    "task": {
+      "name": "topology_c4_disk",
+      "variant": "topology",
+      "conn_seed": 4
+    },
+    "updated_unix": 1790633184.1135921
+  },
+  "location_disk": {
+    "status": "DONE",
+    "seconds": 2418.162873029709,
+    "task": {
+      "name": "location_disk",
+      "variant": "location"
+    },
+    "updated_unix": 1790635602.2803228
+  },
+  "design_pilot_location_swap": {
+    "status": "DONE",
+    "seconds": 312.34584856033325,
+    "task": {
+      "name": "design_pilot_location_swap",
+      "args": [
+        "experiments/design_pilots.py",
+        "--kind",
+        "location_swap"
+      ]
+    },
+    "updated_unix": 1790635914.6298077
+  },
+  "design_pilot_shared": {
+    "status": "DONE",
+    "seconds": 156.23489618301392,
+    "task": {
+      "name": "design_pilot_shared",
+      "args": [
+        "experiments/design_pilots.py",
+        "--kind",
+        "shared"
+      ]
+    },
+    "updated_unix": 1790636070.8686976
+  },
+  "topology_c3_jitter101": {
+    "status": "DONE",
+    "seconds": 1934.31818318367,
+    "task": {
+      "name": "topology_c3_jitter101",
+      "args": [
+        "experiments/topology.py",
+        "--probability",
+        ".3",
+        "--conn-seeds",
+        "3",
+        "--event-seeds",
+        "2",
+        "--from-cache",
+        "results/topology_c3/production_spikes.npz",
+        "--out",
+        "results/topology_c3/jitter101",
+        "--solver",
+        "DISK_LBFGS",
+        "--no-float32",
+        "--max-iter",
+        "1500",
+        "--jitter-seed",
+        "101"
+      ]
+    },
+    "updated_unix": 1790638005.1882029
+  },
+  "topology_c3_jitter202": {
+    "status": "DONE",
+    "seconds": 1921.9310050010681,
+    "task": {
+      "name": "topology_c3_jitter202",
+      "args": [
+        "experiments/topology.py",
+        "--probability",
+        ".3",
+        "--conn-seeds",
+        "3",
+        "--event-seeds",
+        "2",
+        "--from-cache",
+        "results/topology_c3/production_spikes.npz",
+        "--out",
+        "results/topology_c3/jitter202",
+        "--solver",
+        "DISK_LBFGS",
+        "--no-float32",
+        "--max-iter",
+        "1500",
+        "--jitter-seed",
+        "202"
+      ]
+    },
+    "updated_unix": 1790639927.1224988
+  },
+  "topology_c3_jitter303": {
+    "status": "DONE",
+    "seconds": 1841.1713681221008,
+    "task": {
+      "name": "topology_c3_jitter303",
+      "args": [
+        "experiments/topology.py",
+        "--probability",
+        ".3",
+        "--conn-seeds",
+        "3",
+        "--event-seeds",
+        "2",
+        "--from-cache",
+        "results/topology_c3/production_spikes.npz",
+        "--out",
+        "results/topology_c3/jitter303",
+        "--solver",
+        "DISK_LBFGS",
+        "--no-float32",
+        "--max-iter",
+        "1500",
+        "--jitter-seed",
+        "303"
+      ]
+    },
+    "updated_unix": 1790641768.2971184
+  },
+  "topology_c4_jitter101": {
+    "status": "DONE",
+    "seconds": 1905.3017115592957,
+    "task": {
+      "name": "topology_c4_jitter101",
+      "args": [
+        "experiments/topology.py",
+        "--probability",
+        ".3",
+        "--conn-seeds",
+        "4",
+        "--event-seeds",
+        "2",
+        "--from-cache",
+        "results/topology_c4/production_spikes.npz",
+        "--out",
+        "results/topology_c4/jitter101",
+        "--solver",
+        "DISK_LBFGS",
+        "--no-float32",
+        "--max-iter",
+        "1500",
+        "--jitter-seed",
+        "101"
+      ]
+    },
+    "updated_unix": 1790643673.599744
+  },
+  "topology_c4_jitter202": {
+    "status": "DONE",
+    "seconds": 1944.209394454956,
+    "task": {
+      "name": "topology_c4_jitter202",
+      "args": [
+        "experiments/topology.py",
+        "--probability",
+        ".3",
+        "--conn-seeds",
+        "4",
+        "--event-seeds",
+        "2",
+        "--from-cache",
+        "results/topology_c4/production_spikes.npz",
+        "--out",
+        "results/topology_c4/jitter202",
+        "--solver",
+        "DISK_LBFGS",
+        "--no-float32",
+        "--max-iter",
+        "1500",
+        "--jitter-seed",
+        "202"
+      ]
+    },
+    "updated_unix": 1790645617.818343
+  },
+  "topology_c4_jitter303": {
+    "status": "DONE",
+    "seconds": 1704.371660709381,
+    "task": {
+      "name": "topology_c4_jitter303",
+      "args": [
+        "experiments/topology.py",
+        "--probability",
+        ".3",
+        "--conn-seeds",
+        "4",
+        "--event-seeds",
+        "2",
+        "--from-cache",
+        "results/topology_c4/production_spikes.npz",
+        "--out",
+        "results/topology_c4/jitter303",
+        "--solver",
+        "DISK_LBFGS",
+        "--no-float32",
+        "--max-iter",
+        "1500",
+        "--jitter-seed",
+        "303"
+      ]
+    },
+    "updated_unix": 1790647322.194606
+  },
+  "proxy_s100_full": {
+    "status": "DONE",
+    "seconds": 2346.1310741901398,
+    "task": {
+      "name": "proxy_s100_full",
+      "args": [
+        "experiments/grid.py",
+        "--from-cache",
+        "results/production_spikes.npz",
+        "--seeds",
+        "100",
+        "--out",
+        "results/seed100/disk_proxy",
+        "--cell",
+        "full",
+        "proxy",
+        "--solver",
+        "DISK_LBFGS",
+        "--no-float32",
+        "--max-iter",
+        "1500"
+      ]
+    },
+    "updated_unix": 1790677002.5809875
+  },
+  "proxy_s100_interneurons_hidden": {
+    "status": "DONE",
+    "seconds": 1455.9146621227264,
+    "task": {
+      "name": "proxy_s100_interneurons_hidden",
+      "args": [
+        "experiments/grid.py",
+        "--from-cache",
+        "results/production_spikes.npz",
+        "--seeds",
+        "100",
+        "--out",
+        "results/seed100/disk_proxy",
+        "--cell",
+        "interneurons_hidden",
+        "proxy",
+        "--solver",
+        "DISK_LBFGS",
+        "--no-float32",
+        "--max-iter",
+        "1500"
+      ]
+    },
+    "updated_unix": 1790678458.4992347
+  },
+  "proxy_s100_random_subsample": {
+    "status": "DONE",
+    "seconds": 1125.1166052818298,
+    "task": {
+      "name": "proxy_s100_random_subsample",
+      "args": [
+        "experiments/grid.py",
+        "--from-cache",
+        "results/production_spikes.npz",
+        "--seeds",
+        "100",
+        "--out",
+        "results/seed100/disk_proxy",
+        "--cell",
+        "random_subsample",
+        "proxy",
+        "--solver",
+        "DISK_LBFGS",
+        "--no-float32",
+        "--max-iter",
+        "1500"
+      ]
+    },
+    "updated_unix": 1790679583.6184874
+  },
+  "proxy_s200_full": {
+    "status": "DONE",
+    "seconds": 2178.9585371017456,
+    "task": {
+      "name": "proxy_s200_full",
+      "args": [
+        "experiments/grid.py",
+        "--from-cache",
+        "results/seed200/production_spikes.npz",
+        "--seeds",
+        "200",
+        "--out",
+        "results/seed200/disk_proxy",
+        "--cell",
+        "full",
+        "proxy",
+        "--solver",
+        "DISK_LBFGS",
+        "--no-float32",
+        "--max-iter",
+        "1500"
+      ]
+    },
+    "updated_unix": 1790681762.597038
+  },
+  "proxy_s200_interneurons_hidden": {
+    "status": "DONE",
+    "seconds": 1175.7401595115662,
+    "task": {
+      "name": "proxy_s200_interneurons_hidden",
+      "args": [
+        "experiments/grid.py",
+        "--from-cache",
+        "results/seed200/production_spikes.npz",
+        "--seeds",
+        "200",
+        "--out",
+        "results/seed200/disk_proxy",
+        "--cell",
+        "interneurons_hidden",
+        "proxy",
+        "--solver",
+        "DISK_LBFGS",
+        "--no-float32",
+        "--max-iter",
+        "1500"
+      ]
+    },
+    "updated_unix": 1790682938.375453
+  },
+  "proxy_s200_random_subsample": {
+    "status": "DONE",
+    "seconds": 1333.8861021995544,
+    "task": {
+      "name": "proxy_s200_random_subsample",
+      "args": [
+        "experiments/grid.py",
+        "--from-cache",
+        "results/seed200/production_spikes.npz",
+        "--seeds",
+        "200",
+        "--out",
+        "results/seed200/disk_proxy",
+        "--cell",
+        "random_subsample",
+        "proxy",
+        "--solver",
+        "DISK_LBFGS",
+        "--no-float32",
+        "--max-iter",
+        "1500"
+      ]
+    },
+    "updated_unix": 1790684272.2637885
+  },
+  "proxy_s300_full": {
+    "status": "DONE",
+    "seconds": 2529.7803721427917,
+    "task": {
+      "name": "proxy_s300_full",
+      "args": [
+        "experiments/grid.py",
+        "--from-cache",
+        "results/seed300/production_spikes.npz",
+        "--seeds",
+        "300",
+        "--out",
+        "results/seed300/disk_proxy",
+        "--cell",
+        "full",
+        "proxy",
+        "--solver",
+        "DISK_LBFGS",
+        "--no-float32",
+        "--max-iter",
+        "1500"
+      ]
+    },
+    "updated_unix": 1790686802.0454357
+  },
+  "proxy_s300_interneurons_hidden": {
+    "status": "DONE",
+    "seconds": 1251.4827177524567,
+    "task": {
+      "name": "proxy_s300_interneurons_hidden",
+      "args": [
+        "experiments/grid.py",
+        "--from-cache",
+        "results/seed300/production_spikes.npz",
+        "--seeds",
+        "300",
+        "--out",
+        "results/seed300/disk_proxy",
+        "--cell",
+        "interneurons_hidden",
+        "proxy",
+        "--solver",
+        "DISK_LBFGS",
+        "--no-float32",
+        "--max-iter",
+        "1500"
+      ]
+    },
+    "updated_unix": 1790688053.530356
+  },
+  "proxy_s300_random_subsample": {
+    "status": "DONE",
+    "seconds": 1559.7505304813385,
+    "task": {
+      "name": "proxy_s300_random_subsample",
+      "args": [
+        "experiments/grid.py",
+        "--from-cache",
+        "results/seed300/production_spikes.npz",
+        "--seeds",
+        "300",
+        "--out",
+        "results/seed300/disk_proxy",
+        "--cell",
+        "random_subsample",
+        "proxy",
+        "--solver",
+        "DISK_LBFGS",
+        "--no-float32",
+        "--max-iter",
+        "1500"
+      ]
+    },
+    "updated_unix": 1790689613.2846138
+  },
+  "calibration5_s0": {
+    "status": "DONE",
+    "seconds": 98.73248362541199,
+    "task": {
+      "name": "calibration5_s0",
+      "args": [
+        "experiments/calibrate.py",
+        "--duration",
+        "300",
+        "--n-basis",
+        "5",
+        "--seed",
+        "0",
+        "--out",
+        "results/calibration5/seed0"
+      ]
+    },
+    "updated_unix": 1790689712.0193882
+  },
+  "latency5_f64_s0": {
+    "status": "DONE",
+    "seconds": 63.895663022994995,
+    "task": {
+      "name": "latency5_f64_s0",
+      "args": [
+        "experiments/latency_calibration.py",
+        "--duration",
+        "300",
+        "--n-basis",
+        "5",
+        "--seed",
+        "0",
+        "--no-float32",
+        "--out",
+        "results/latency_f64/seed0"
+      ]
+    },
+    "updated_unix": 1790689775.9165184
+  },
+  "calibration5_s1": {
+    "status": "DONE",
+    "seconds": 88.48823261260986,
+    "task": {
+      "name": "calibration5_s1",
+      "args": [
+        "experiments/calibrate.py",
+        "--duration",
+        "300",
+        "--n-basis",
+        "5",
+        "--seed",
+        "1",
+        "--out",
+        "results/calibration5/seed1"
+      ]
+    },
+    "updated_unix": 1790689864.4084785
+  },
+  "latency5_f64_s1": {
+    "status": "DONE",
+    "seconds": 56.57065272331238,
+    "task": {
+      "name": "latency5_f64_s1",
+      "args": [
+        "experiments/latency_calibration.py",
+        "--duration",
+        "300",
+        "--n-basis",
+        "5",
+        "--seed",
+        "1",
+        "--no-float32",
+        "--out",
+        "results/latency_f64/seed1"
+      ]
+    },
+    "updated_unix": 1790689920.9861147
+  },
+  "calibration5_s2": {
+    "status": "DONE",
+    "seconds": 90.92589473724365,
+    "task": {
+      "name": "calibration5_s2",
+      "args": [
+        "experiments/calibrate.py",
+        "--duration",
+        "300",
+        "--n-basis",
+        "5",
+        "--seed",
+        "2",
+        "--out",
+        "results/calibration5/seed2"
+      ]
+    },
+    "updated_unix": 1790690011.9139547
+  },
+  "latency5_f64_s2": {
+    "status": "DONE",
+    "seconds": 56.058754682540894,
+    "task": {
+      "name": "latency5_f64_s2",
+      "args": [
+        "experiments/latency_calibration.py",
+        "--duration",
+        "300",
+        "--n-basis",
+        "5",
+        "--seed",
+        "2",
+        "--no-float32",
+        "--out",
+        "results/latency_f64/seed2"
+      ]
+    },
+    "updated_unix": 1790690067.974615
+  }
+}

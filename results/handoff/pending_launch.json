@@ -1,0 +1,12 @@
+{
+  "pid": 5221,
+  "command": [
+    "taskset",
+    "-c",
+    "0-3",
+    "/home/satvik/miniconda3/envs/neurotwin/bin/python",
+    "-u",
+    "experiments/finish_pending.py"
+  ],
+  "started_unix": 1790674655.4186056
+}

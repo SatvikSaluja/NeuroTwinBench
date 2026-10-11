@@ -1,0 +1,64 @@
+REUSE results/topology_c3/production_spikes.npz
+START fit_topology_c3: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/topology.py --probability .3 --conn-seeds 3 --event-seeds 2 --from-cache results/topology_c3/production_spikes.npz --out results/topology_c3/disk_fit --no-float32 --solver DISK_LBFGS --n-basis 5 --max-iter 1500
+DONE fit_topology_c3: 2825s
+START pilot_topology_c4: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/run_handoff.py --pilot topology --conn-seed 4
+DONE pilot_topology_c4: 239s
+START simulate_topology_c4: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/production.py --chunks 11 --chunk-s 320 --base-seed 2 --n-basis 5 --simulate-only --out results/topology_c4 --probability .3 --conn-seed 4
+START simulate_topology_c4: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/production.py --chunks 11 --chunk-s 320 --base-seed 2 --n-basis 5 --simulate-only --out results/topology_c4 --probability .3 --conn-seed 4
+DONE simulate_topology_c4: 10738s
+START fit_topology_c4: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/topology.py --probability .3 --conn-seeds 4 --event-seeds 2 --from-cache results/topology_c4/production_spikes.npz --out results/topology_c4/disk_fit --no-float32 --solver DISK_LBFGS --n-basis 5 --max-iter 1500
+DONE fit_topology_c4: 2784s
+REUSE results/location/production_spikes.npz
+START fit_location: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/location.py --seeds 2 --from-cache results/location/production_spikes.npz --out results/location/disk_fit --no-float32 --solver DISK_LBFGS --n-basis 5 --max-iter 1500
+DONE fit_location: 2418s
+START design_pilot_location_swap: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/design_pilots.py --kind location_swap
+DONE design_pilot_location_swap: 312s
+START design_pilot_shared: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/design_pilots.py --kind shared
+DONE design_pilot_shared: 156s
+START topology_c3_jitter101: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/topology.py --probability .3 --conn-seeds 3 --event-seeds 2 --from-cache results/topology_c3/production_spikes.npz --out results/topology_c3/jitter101 --solver DISK_LBFGS --no-float32 --max-iter 1500 --jitter-seed 101
+DONE topology_c3_jitter101: 1934s
+START topology_c3_jitter202: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/topology.py --probability .3 --conn-seeds 3 --event-seeds 2 --from-cache results/topology_c3/production_spikes.npz --out results/topology_c3/jitter202 --solver DISK_LBFGS --no-float32 --max-iter 1500 --jitter-seed 202
+DONE topology_c3_jitter202: 1922s
+START topology_c3_jitter303: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/topology.py --probability .3 --conn-seeds 3 --event-seeds 2 --from-cache results/topology_c3/production_spikes.npz --out results/topology_c3/jitter303 --solver DISK_LBFGS --no-float32 --max-iter 1500 --jitter-seed 303
+DONE topology_c3_jitter303: 1841s
+START topology_c4_jitter101: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/topology.py --probability .3 --conn-seeds 4 --event-seeds 2 --from-cache results/topology_c4/production_spikes.npz --out results/topology_c4/jitter101 --solver DISK_LBFGS --no-float32 --max-iter 1500 --jitter-seed 101
+DONE topology_c4_jitter101: 1905s
+START topology_c4_jitter202: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/topology.py --probability .3 --conn-seeds 4 --event-seeds 2 --from-cache results/topology_c4/production_spikes.npz --out results/topology_c4/jitter202 --solver DISK_LBFGS --no-float32 --max-iter 1500 --jitter-seed 202
+DONE topology_c4_jitter202: 1944s
+START topology_c4_jitter303: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/topology.py --probability .3 --conn-seeds 4 --event-seeds 2 --from-cache results/topology_c4/production_spikes.npz --out results/topology_c4/jitter303 --solver DISK_LBFGS --no-float32 --max-iter 1500 --jitter-seed 303
+DONE topology_c4_jitter303: 1704s
+START proxy_s100_full: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/grid.py --from-cache results/production_spikes.npz --seeds 100 --out results/seed100/disk_proxy --cell full proxy --solver DISK_LBFGS --no-float32 --max-iter 1500
+START proxy_s100_full: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/grid.py --from-cache results/production_spikes.npz --seeds 100 --out results/seed100/disk_proxy --cell full proxy --solver DISK_LBFGS --no-float32 --max-iter 1500
+DONE proxy_s100_full: 2346s
+START proxy_s100_interneurons_hidden: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/grid.py --from-cache results/production_spikes.npz --seeds 100 --out results/seed100/disk_proxy --cell interneurons_hidden proxy --solver DISK_LBFGS --no-float32 --max-iter 1500
+DONE proxy_s100_interneurons_hidden: 1456s
+START proxy_s100_random_subsample: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/grid.py --from-cache results/production_spikes.npz --seeds 100 --out results/seed100/disk_proxy --cell random_subsample proxy --solver DISK_LBFGS --no-float32 --max-iter 1500
+DONE proxy_s100_random_subsample: 1125s
+START proxy_s200_full: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/grid.py --from-cache results/seed200/production_spikes.npz --seeds 200 --out results/seed200/disk_proxy --cell full proxy --solver DISK_LBFGS --no-float32 --max-iter 1500
+DONE proxy_s200_full: 2179s
+START proxy_s200_interneurons_hidden: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/grid.py --from-cache results/seed200/production_spikes.npz --seeds 200 --out results/seed200/disk_proxy --cell interneurons_hidden proxy --solver DISK_LBFGS --no-float32 --max-iter 1500
+DONE proxy_s200_interneurons_hidden: 1176s
+START proxy_s200_random_subsample: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/grid.py --from-cache results/seed200/production_spikes.npz --seeds 200 --out results/seed200/disk_proxy --cell random_subsample proxy --solver DISK_LBFGS --no-float32 --max-iter 1500
+DONE proxy_s200_random_subsample: 1334s
+START proxy_s300_full: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/grid.py --from-cache results/seed300/production_spikes.npz --seeds 300 --out results/seed300/disk_proxy --cell full proxy --solver DISK_LBFGS --no-float32 --max-iter 1500
+DONE proxy_s300_full: 2530s
+START proxy_s300_interneurons_hidden: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/grid.py --from-cache results/seed300/production_spikes.npz --seeds 300 --out results/seed300/disk_proxy --cell interneurons_hidden proxy --solver DISK_LBFGS --no-float32 --max-iter 1500
+DONE proxy_s300_interneurons_hidden: 1251s
+START proxy_s300_random_subsample: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/grid.py --from-cache results/seed300/production_spikes.npz --seeds 300 --out results/seed300/disk_proxy --cell random_subsample proxy --solver DISK_LBFGS --no-float32 --max-iter 1500
+DONE proxy_s300_random_subsample: 1560s
+START calibration5_s0: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/calibrate.py --duration 300 --n-basis 5 --seed 0 --out results/calibration5/seed0
+DONE calibration5_s0: 99s
+START latency5_f64_s0: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/latency_calibration.py --duration 300 --n-basis 5 --seed 0 --no-float32 --out results/latency_f64/seed0
+DONE latency5_f64_s0: 64s
+START calibration5_s1: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/calibrate.py --duration 300 --n-basis 5 --seed 1 --out results/calibration5/seed1
+DONE calibration5_s1: 88s
+START latency5_f64_s1: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/latency_calibration.py --duration 300 --n-basis 5 --seed 1 --no-float32 --out results/latency_f64/seed1
+DONE latency5_f64_s1: 57s
+START calibration5_s2: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/calibrate.py --duration 300 --n-basis 5 --seed 2 --out results/calibration5/seed2
+DONE calibration5_s2: 91s
+START latency5_f64_s2: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/latency_calibration.py --duration 300 --n-basis 5 --seed 2 --no-float32 --out results/latency_f64/seed2
+DONE latency5_f64_s2: 56s
+START report: /home/satvik/miniconda3/envs/neurotwin/bin/python experiments/report_handoff.py
+DONE report: 1s
+START figures: /home/satvik/miniconda3/envs/neurotwin/bin/python figures/make_figures.py
+DONE figures: 2s

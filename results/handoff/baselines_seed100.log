@@ -1,0 +1,7 @@
+
+START Wed Sep 23 23:24:36 2026 ['/home/satvik/miniconda3/envs/neurotwin/bin/python', 'experiments/production_baselines.py', '--from-cache', 'results/production_spikes.npz', '--seed', '100', '--out', 'results/seed100']
+DONE ccg: 25s, 0.81 GiB, 16 classes
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+DONE pairwise: 13092s, 7.65 GiB, 16 classes
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+DONE jitter: 1492s, 18.27 GiB, 16 classes

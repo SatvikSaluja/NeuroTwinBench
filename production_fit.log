@@ -1,0 +1,2 @@
+An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+production_full: 1944s peak=18.76GB raw_design=3.64GB classes=11

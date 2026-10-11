@@ -1,0 +1,39 @@
+{
+  "config": {
+    "mesh_shape": [
+      5,
+      5
+    ],
+    "tstop_ms": 20000,
+    "n_trials": 1,
+    "dt_ms": 0.025,
+    "drive_rate_hz": 10.0,
+    "drive_weight_ampa": 0.0002,
+    "drive_weight_nmda": 0.0001,
+    "drive_location": "proximal",
+    "event_seed": 2,
+    "conn_seed": 3,
+    "legacy_mode": false,
+    "network": "location",
+    "location_weight": 0.0005,
+    "connection_probability": {}
+  },
+  "power": {
+    "n_predictors": 355,
+    "bins_per_predictor": 56.33802816901409,
+    "spikes_per_predictor": 0.19340040241448692,
+    "spikes_per_neuron": 68.65714285714286,
+    "mean_rate_hz": 3.432857142857143
+  },
+  "planned_chunks": 7,
+  "planned_seconds": 2240,
+  "seconds": 171.10110521316528,
+  "diagnostics": {
+    "function_val": 0.9613440036773682,
+    "num_steps": 500,
+    "converged": false,
+    "reached_max_steps": true
+  },
+  "peak_rss_gib": 0.7650947570800781,
+  "note": "duration extrapolated from a measured 20s pilot; 16.1 is a synthetic reference, not HNN sufficiency"
+}

@@ -1,0 +1,184 @@
+{
+  "tasks": [
+    {
+      "name": "phase2_existing_uncertainty",
+      "args": [
+        "experiments/phase2_uncertainty.py"
+      ]
+    },
+    {
+      "name": "phase2_topology_c11_e1000000",
+      "args": [
+        "experiments/phase2_studies.py",
+        "--kind",
+        "topology",
+        "--conn-seed",
+        "11",
+        "--event-seed",
+        "1000000",
+        "--out",
+        "results/phase2/topology_c11_e1000000"
+      ]
+    },
+    {
+      "name": "phase2_shared_c11",
+      "args": [
+        "experiments/phase2_studies.py",
+        "--kind",
+        "shared",
+        "--conn-seed",
+        "11",
+        "--event-seed",
+        "1000000",
+        "--out",
+        "results/phase2/shared_c11"
+      ]
+    },
+    {
+      "name": "phase2_topology_c11_e1001000",
+      "args": [
+        "experiments/phase2_studies.py",
+        "--kind",
+        "topology",
+        "--conn-seed",
+        "11",
+        "--event-seed",
+        "1001000",
+        "--out",
+        "results/phase2/topology_c11_e1001000"
+      ]
+    },
+    {
+      "name": "phase2_location_s0",
+      "args": [
+        "experiments/phase2_studies.py",
+        "--kind",
+        "location",
+        "--conn-seed",
+        "3",
+        "--event-seed",
+        "2000000",
+        "--out",
+        "results/phase2/location_s0"
+      ]
+    },
+    {
+      "name": "phase2_topology_c12_e1010000",
+      "args": [
+        "experiments/phase2_studies.py",
+        "--kind",
+        "topology",
+        "--conn-seed",
+        "12",
+        "--event-seed",
+        "1010000",
+        "--out",
+        "results/phase2/topology_c12_e1010000"
+      ]
+    },
+    {
+      "name": "phase2_topology_c12_e1011000",
+      "args": [
+        "experiments/phase2_studies.py",
+        "--kind",
+        "topology",
+        "--conn-seed",
+        "12",
+        "--event-seed",
+        "1011000",
+        "--out",
+        "results/phase2/topology_c12_e1011000"
+      ]
+    },
+    {
+      "name": "phase2_shared_c12",
+      "args": [
+        "experiments/phase2_studies.py",
+        "--kind",
+        "shared",
+        "--conn-seed",
+        "12",
+        "--event-seed",
+        "1010000",
+        "--out",
+        "results/phase2/shared_c12"
+      ]
+    },
+    {
+      "name": "phase2_location_s1",
+      "args": [
+        "experiments/phase2_studies.py",
+        "--kind",
+        "location",
+        "--conn-seed",
+        "3",
+        "--event-seed",
+        "2010000",
+        "--out",
+        "results/phase2/location_s1"
+      ]
+    },
+    {
+      "name": "phase2_topology_c13_e1020000",
+      "args": [
+        "experiments/phase2_studies.py",
+        "--kind",
+        "topology",
+        "--conn-seed",
+        "13",
+        "--event-seed",
+        "1020000",
+        "--out",
+        "results/phase2/topology_c13_e1020000"
+      ]
+    },
+    {
+      "name": "phase2_topology_c13_e1021000",
+      "args": [
+        "experiments/phase2_studies.py",
+        "--kind",
+        "topology",
+        "--conn-seed",
+        "13",
+        "--event-seed",
+        "1021000",
+        "--out",
+        "results/phase2/topology_c13_e1021000"
+      ]
+    },
+    {
+      "name": "phase2_shared_c13",
+      "args": [
+        "experiments/phase2_studies.py",
+        "--kind",
+        "shared",
+        "--conn-seed",
+        "13",
+        "--event-seed",
+        "1020000",
+        "--out",
+        "results/phase2/shared_c13"
+      ]
+    },
+    {
+      "name": "phase2_location_s2",
+      "args": [
+        "experiments/phase2_studies.py",
+        "--kind",
+        "location",
+        "--conn-seed",
+        "3",
+        "--event-seed",
+        "2020000",
+        "--out",
+        "results/phase2/location_s2"
+      ]
+    },
+    {
+      "name": "phase2_final_uncertainty",
+      "args": [
+        "experiments/phase2_uncertainty.py"
+      ]
+    }
+  ]
+}
