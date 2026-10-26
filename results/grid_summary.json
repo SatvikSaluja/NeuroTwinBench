@@ -1,0 +1,1751 @@
+{
+  "n_seeds": 3,
+  "summary": {
+    "full/true": {
+      "L2_basket->L2_basket|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 1.0,
+          "sd": 0.0
+        }
+      },
+      "L2_basket->L2_pyramidal|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.92,
+          "sd": 0.0040000000000000036
+        }
+      },
+      "L2_basket->L2_pyramidal|gabab|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.92,
+          "sd": 0.0040000000000000036
+        }
+      },
+      "L2_basket->L5_pyramidal|gabaa|distal": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.47733333333333333,
+          "sd": 0.0023094010767585054
+        }
+      },
+      "L2_pyramidal->L2_basket|ampa|soma": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.7261782565592613,
+          "sd": 0.002516000072627141
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.7647849462365591,
+          "sd": 0.004656050557980849
+        }
+      },
+      "L2_pyramidal->L2_pyramidal|ampa|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.31075102418237316,
+          "sd": 0.0017570494622234515
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.977069351230425,
+          "sd": 0.003874834021406943
+        }
+      },
+      "L2_pyramidal->L2_pyramidal|nmda|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.31075102418237316,
+          "sd": 0.0017570494622234515
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.977069351230425,
+          "sd": 0.003874834021406943
+        }
+      },
+      "L2_pyramidal->L5_basket|ampa|soma": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.70426297407731,
+          "sd": 0.005530470148789477
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.814516129032258,
+          "sd": 0.006984075836971337
+        }
+      },
+      "L2_pyramidal->L5_pyramidal|ampa|distal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.1101175993341252,
+          "sd": 0.009997938893222615
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.9978529253891573,
+          "sd": 0.0009297105784051986
+        }
+      },
+      "L2_pyramidal->L5_pyramidal|ampa|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.1101175993341252,
+          "sd": 0.009997938893222615
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.9978529253891573,
+          "sd": 0.0009297105784051986
+        }
+      },
+      "L5_basket->L5_basket|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 1.0,
+          "sd": 0.0
+        }
+      },
+      "L5_basket->L5_pyramidal|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.4106666666666667,
+          "sd": 0.004618802153517011
+        }
+      },
+      "L5_basket->L5_pyramidal|gabab|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.4106666666666667,
+          "sd": 0.004618802153517011
+        }
+      },
+      "L5_pyramidal->L5_basket|ampa|soma": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.3879961273802413,
+          "sd": 0.0033982687576845924
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.8508064516129031,
+          "sd": 0.006984075836971273
+        }
+      },
+      "L5_pyramidal->L5_pyramidal|ampa|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.49168958787503153,
+          "sd": 0.0034358110354410906
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.8478747203579419,
+          "sd": 0.010787081388135333
+        }
+      },
+      "L5_pyramidal->L5_pyramidal|nmda|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.49168958787503153,
+          "sd": 0.0034358110354410906
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.8478747203579419,
+          "sd": 0.010787081388135333
+        }
+      }
+    },
+    "full/proxy": {
+      "L2_basket->L2_basket|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 1.0,
+          "sd": 0.0
+        }
+      },
+      "L2_basket->L2_pyramidal|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.92,
+          "sd": 0.0040000000000000036
+        }
+      },
+      "L2_basket->L2_pyramidal|gabab|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.92,
+          "sd": 0.0040000000000000036
+        }
+      },
+      "L2_basket->L5_pyramidal|gabaa|distal": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.47733333333333333,
+          "sd": 0.0023094010767585054
+        }
+      },
+      "L2_pyramidal->L2_basket|ampa|soma": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.7257222479767843,
+          "sd": 0.002420940630834287
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.7647849462365591,
+          "sd": 0.004656050557980849
+        }
+      },
+      "L2_pyramidal->L2_pyramidal|ampa|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.3112183049534591,
+          "sd": 0.0016702449727205118
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.9765100671140939,
+          "sd": 0.002906125516055207
+        }
+      },
+      "L2_pyramidal->L2_pyramidal|nmda|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.3112183049534591,
+          "sd": 0.0016702449727205118
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.9765100671140939,
+          "sd": 0.002906125516055207
+        }
+      },
+      "L2_pyramidal->L5_basket|ampa|soma": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.703777065452019,
+          "sd": 0.005362941551976803
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.8131720430107526,
+          "sd": 0.009312101115961762
+        }
+      },
+      "L2_pyramidal->L5_pyramidal|ampa|distal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.11028090743556283,
+          "sd": 0.009917004725641956
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.9978529253891573,
+          "sd": 0.0009297105784051986
+        }
+      },
+      "L2_pyramidal->L5_pyramidal|ampa|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.11028090743556283,
+          "sd": 0.009917004725641956
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.9978529253891573,
+          "sd": 0.0009297105784051986
+        }
+      },
+      "L5_basket->L5_basket|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 1.0,
+          "sd": 0.0
+        }
+      },
+      "L5_basket->L5_pyramidal|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.4106666666666667,
+          "sd": 0.004618802153517011
+        }
+      },
+      "L5_basket->L5_pyramidal|gabab|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.4106666666666667,
+          "sd": 0.004618802153517011
+        }
+      },
+      "L5_pyramidal->L5_basket|ampa|soma": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.38867671557944944,
+          "sd": 0.0042042772740309205
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.8508064516129031,
+          "sd": 0.006984075836971273
+        }
+      },
+      "L5_pyramidal->L5_pyramidal|ampa|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.49163520163807145,
+          "sd": 0.00351397684140436
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.8467561521252797,
+          "sd": 0.011420904841533618
+        }
+      },
+      "L5_pyramidal->L5_pyramidal|nmda|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.49163520163807145,
+          "sd": 0.00351397684140436
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.8467561521252797,
+          "sd": 0.011420904841533618
+        }
+      }
+    },
+    "full/hidden": {
+      "L2_basket->L2_basket|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 1.0,
+          "sd": 0.0
+        }
+      },
+      "L2_basket->L2_pyramidal|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.92,
+          "sd": 0.0040000000000000036
+        }
+      },
+      "L2_basket->L2_pyramidal|gabab|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.92,
+          "sd": 0.0040000000000000036
+        }
+      },
+      "L2_basket->L5_pyramidal|gabaa|distal": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.47733333333333333,
+          "sd": 0.0023094010767585054
+        }
+      },
+      "L2_pyramidal->L2_basket|ampa|soma": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.72615428383771,
+          "sd": 0.0026291722039043113
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.7647849462365591,
+          "sd": 0.004656050557980849
+        }
+      },
+      "L2_pyramidal->L2_pyramidal|ampa|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.31074072462247365,
+          "sd": 0.0018629971874105867
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.977069351230425,
+          "sd": 0.003874834021406943
+        }
+      },
+      "L2_pyramidal->L2_pyramidal|nmda|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.31074072462247365,
+          "sd": 0.0018629971874105867
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.977069351230425,
+          "sd": 0.003874834021406943
+        }
+      },
+      "L2_pyramidal->L5_basket|ampa|soma": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.7042686379620723,
+          "sd": 0.005361615795956807
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.814516129032258,
+          "sd": 0.006984075836971337
+        }
+      },
+      "L2_pyramidal->L5_pyramidal|ampa|distal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.11012224969075314,
+          "sd": 0.009884407031545844
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.9978529253891573,
+          "sd": 0.0009297105784051986
+        }
+      },
+      "L2_pyramidal->L5_pyramidal|ampa|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.11012224969075314,
+          "sd": 0.009884407031545844
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.9978529253891573,
+          "sd": 0.0009297105784051986
+        }
+      },
+      "L5_basket->L5_basket|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 1.0,
+          "sd": 0.0
+        }
+      },
+      "L5_basket->L5_pyramidal|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.4106666666666667,
+          "sd": 0.004618802153517011
+        }
+      },
+      "L5_basket->L5_pyramidal|gabab|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.4106666666666667,
+          "sd": 0.004618802153517011
+        }
+      },
+      "L5_pyramidal->L5_basket|ampa|soma": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.38803011068881416,
+          "sd": 0.003361037462375584
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.8508064516129031,
+          "sd": 0.006984075836971273
+        }
+      },
+      "L5_pyramidal->L5_pyramidal|ampa|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.4917682217843749,
+          "sd": 0.0034634274777069216
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.8478747203579419,
+          "sd": 0.010787081388135333
+        }
+      },
+      "L5_pyramidal->L5_pyramidal|nmda|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.4917682217843749,
+          "sd": 0.0034634274777069216
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.8478747203579419,
+          "sd": 0.010787081388135333
+        }
+      }
+    },
+    "interneurons_hidden/true": {
+      "L2_basket->L2_basket|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        }
+      },
+      "L2_basket->L2_pyramidal|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        }
+      },
+      "L2_basket->L2_pyramidal|gabab|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        }
+      },
+      "L2_basket->L5_pyramidal|gabaa|distal": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        }
+      },
+      "L2_pyramidal->L2_basket|ampa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        }
+      },
+      "L2_pyramidal->L2_pyramidal|ampa|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.2768292146217302,
+          "sd": 0.003721849326080512
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.9149888143176733,
+          "sd": 0.0009687085053516716
+        }
+      },
+      "L2_pyramidal->L2_pyramidal|nmda|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.2768292146217302,
+          "sd": 0.003721849326080512
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.9149888143176733,
+          "sd": 0.0009687085053516716
+        }
+      },
+      "L2_pyramidal->L5_basket|ampa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        }
+      },
+      "L2_pyramidal->L5_pyramidal|ampa|distal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": -0.07634967263544783,
+          "sd": 0.007602362610245727
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 1.0,
+          "sd": 0.0
+        }
+      },
+      "L2_pyramidal->L5_pyramidal|ampa|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": -0.07634967263544783,
+          "sd": 0.007602362610245727
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 1.0,
+          "sd": 0.0
+        }
+      },
+      "L5_basket->L5_basket|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        }
+      },
+      "L5_basket->L5_pyramidal|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        }
+      },
+      "L5_basket->L5_pyramidal|gabab|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        }
+      },
+      "L5_pyramidal->L5_basket|ampa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        }
+      },
+      "L5_pyramidal->L5_pyramidal|ampa|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.5033023226588332,
+          "sd": 0.004115538831232091
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.7891498881431768,
+          "sd": 0.011784847598269298
+        }
+      },
+      "L5_pyramidal->L5_pyramidal|nmda|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.5033023226588332,
+          "sd": 0.004115538831232091
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.7891498881431768,
+          "sd": 0.011784847598269298
+        }
+      }
+    },
+    "interneurons_hidden/proxy": {
+      "L2_basket->L2_basket|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        }
+      },
+      "L2_basket->L2_pyramidal|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        }
+      },
+      "L2_basket->L2_pyramidal|gabab|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        }
+      },
+      "L2_basket->L5_pyramidal|gabaa|distal": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        }
+      },
+      "L2_pyramidal->L2_basket|ampa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        }
+      },
+      "L2_pyramidal->L2_pyramidal|ampa|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.2781739722893457,
+          "sd": 0.0034377130304947116
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.9133109619686802,
+          "sd": 0.0009687085053517357
+        }
+      },
+      "L2_pyramidal->L2_pyramidal|nmda|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.2781739722893457,
+          "sd": 0.0034377130304947116
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.9133109619686802,
+          "sd": 0.0009687085053517357
+        }
+      },
+      "L2_pyramidal->L5_basket|ampa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        }
+      },
+      "L2_pyramidal->L5_pyramidal|ampa|distal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": -0.07649244865690001,
+          "sd": 0.007491138404378301
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 1.0,
+          "sd": 0.0
+        }
+      },
+      "L2_pyramidal->L5_pyramidal|ampa|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": -0.07649244865690001,
+          "sd": 0.007491138404378301
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 1.0,
+          "sd": 0.0
+        }
+      },
+      "L5_basket->L5_basket|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        }
+      },
+      "L5_basket->L5_pyramidal|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        }
+      },
+      "L5_basket->L5_pyramidal|gabab|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        }
+      },
+      "L5_pyramidal->L5_basket|ampa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        }
+      },
+      "L5_pyramidal->L5_pyramidal|ampa|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.5033548846195012,
+          "sd": 0.004089972813916225
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.7891498881431768,
+          "sd": 0.011784847598269298
+        }
+      },
+      "L5_pyramidal->L5_pyramidal|nmda|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.5033548846195012,
+          "sd": 0.004089972813916225
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.7891498881431768,
+          "sd": 0.011784847598269298
+        }
+      }
+    },
+    "interneurons_hidden/hidden": {
+      "L2_basket->L2_basket|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        }
+      },
+      "L2_basket->L2_pyramidal|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        }
+      },
+      "L2_basket->L2_pyramidal|gabab|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        }
+      },
+      "L2_basket->L5_pyramidal|gabaa|distal": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        }
+      },
+      "L2_pyramidal->L2_basket|ampa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        }
+      },
+      "L2_pyramidal->L2_pyramidal|ampa|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.27680325669032296,
+          "sd": 0.003611725255031259
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.9149888143176733,
+          "sd": 0.0009687085053516716
+        }
+      },
+      "L2_pyramidal->L2_pyramidal|nmda|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.27680325669032296,
+          "sd": 0.003611725255031259
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.9149888143176733,
+          "sd": 0.0009687085053516716
+        }
+      },
+      "L2_pyramidal->L5_basket|ampa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        }
+      },
+      "L2_pyramidal->L5_pyramidal|ampa|distal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": -0.07627692897021736,
+          "sd": 0.007558527811740457
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 1.0,
+          "sd": 0.0
+        }
+      },
+      "L2_pyramidal->L5_pyramidal|ampa|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": -0.07627692897021736,
+          "sd": 0.007558527811740457
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 1.0,
+          "sd": 0.0
+        }
+      },
+      "L5_basket->L5_basket|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        }
+      },
+      "L5_basket->L5_pyramidal|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        }
+      },
+      "L5_basket->L5_pyramidal|gabab|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        }
+      },
+      "L5_pyramidal->L5_basket|ampa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        }
+      },
+      "L5_pyramidal->L5_pyramidal|ampa|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.5032922511334703,
+          "sd": 0.004040232621685951
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.7891498881431768,
+          "sd": 0.011784847598269298
+        }
+      },
+      "L5_pyramidal->L5_pyramidal|nmda|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.5032922511334703,
+          "sd": 0.004040232621685951
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.7891498881431768,
+          "sd": 0.011784847598269298
+        }
+      }
+    },
+    "random_subsample/true": {
+      "L2_basket->L2_basket|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 1.0,
+          "sd": 0.0
+        }
+      },
+      "L2_basket->L2_pyramidal|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.9064043209876543,
+          "sd": 0.02870401483304101
+        }
+      },
+      "L2_basket->L2_pyramidal|gabab|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.9064043209876543,
+          "sd": 0.02870401483304101
+        }
+      },
+      "L2_basket->L5_pyramidal|gabaa|distal": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.469764254385965,
+          "sd": 0.05384309959672123
+        }
+      },
+      "L2_pyramidal->L2_basket|ampa|soma": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.7634477051314276,
+          "sd": 0.025264232733427712
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.8156399939564484,
+          "sd": 0.025873547909657346
+        }
+      },
+      "L2_pyramidal->L2_pyramidal|ampa|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.22944794743742744,
+          "sd": 0.03310353144564535
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.9816430320816286,
+          "sd": 0.007490472133680905
+        }
+      },
+      "L2_pyramidal->L2_pyramidal|nmda|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.22944794743742744,
+          "sd": 0.03310353144564535
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.9816430320816286,
+          "sd": 0.007490472133680905
+        }
+      },
+      "L2_pyramidal->L5_basket|ampa|soma": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.7499626531412504,
+          "sd": 0.021900096335425116
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.8658058911790255,
+          "sd": 0.0008021214096958406
+        }
+      },
+      "L2_pyramidal->L5_pyramidal|ampa|distal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.14370891676236633,
+          "sd": 0.01967424817100358
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 1.0,
+          "sd": 0.0
+        }
+      },
+      "L2_pyramidal->L5_pyramidal|ampa|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.14370891676236633,
+          "sd": 0.01967424817100358
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 1.0,
+          "sd": 0.0
+        }
+      },
+      "L5_basket->L5_basket|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 1.0,
+          "sd": 0.0
+        }
+      },
+      "L5_basket->L5_pyramidal|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.3319548872180451,
+          "sd": 0.07596124912511104
+        }
+      },
+      "L5_basket->L5_pyramidal|gabab|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.3319548872180451,
+          "sd": 0.07596124912511104
+        }
+      },
+      "L5_pyramidal->L5_basket|ampa|soma": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.35845247036998545,
+          "sd": 0.03532001959751315
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.8874205538531381,
+          "sd": 0.008524854586240025
+        }
+      },
+      "L5_pyramidal->L5_pyramidal|ampa|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.48258318641499603,
+          "sd": 0.04560731143659973
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.8752085940759282,
+          "sd": 0.0076679605059204224
+        }
+      },
+      "L5_pyramidal->L5_pyramidal|nmda|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.48258318641499603,
+          "sd": 0.04560731143659973
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.8752085940759282,
+          "sd": 0.0076679605059204224
+        }
+      }
+    },
+    "random_subsample/proxy": {
+      "L2_basket->L2_basket|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 1.0,
+          "sd": 0.0
+        }
+      },
+      "L2_basket->L2_pyramidal|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.9064043209876543,
+          "sd": 0.02870401483304101
+        }
+      },
+      "L2_basket->L2_pyramidal|gabab|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.9064043209876543,
+          "sd": 0.02870401483304101
+        }
+      },
+      "L2_basket->L5_pyramidal|gabaa|distal": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.469764254385965,
+          "sd": 0.05384309959672123
+        }
+      },
+      "L2_pyramidal->L2_basket|ampa|soma": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.7622062923107796,
+          "sd": 0.025548676074950656
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.8156399939564484,
+          "sd": 0.025873547909657346
+        }
+      },
+      "L2_pyramidal->L2_pyramidal|ampa|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.22998252790415905,
+          "sd": 0.03277328909688164
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.9816430320816286,
+          "sd": 0.007490472133680905
+        }
+      },
+      "L2_pyramidal->L2_pyramidal|nmda|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.22998252790415905,
+          "sd": 0.03277328909688164
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.9816430320816286,
+          "sd": 0.007490472133680905
+        }
+      },
+      "L2_pyramidal->L5_basket|ampa|soma": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.7492905296790383,
+          "sd": 0.021817502242474814
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.8658058911790255,
+          "sd": 0.0008021214096958406
+        }
+      },
+      "L2_pyramidal->L5_pyramidal|ampa|distal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.14348698753684797,
+          "sd": 0.020055840232589734
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 1.0,
+          "sd": 0.0
+        }
+      },
+      "L2_pyramidal->L5_pyramidal|ampa|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.14348698753684797,
+          "sd": 0.020055840232589734
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 1.0,
+          "sd": 0.0
+        }
+      },
+      "L5_basket->L5_basket|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 1.0,
+          "sd": 0.0
+        }
+      },
+      "L5_basket->L5_pyramidal|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.3319548872180451,
+          "sd": 0.07596124912511104
+        }
+      },
+      "L5_basket->L5_pyramidal|gabab|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.3319548872180451,
+          "sd": 0.07596124912511104
+        }
+      },
+      "L5_pyramidal->L5_basket|ampa|soma": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.35846395754690263,
+          "sd": 0.03438546412964965
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.8874205538531381,
+          "sd": 0.008524854586240025
+        }
+      },
+      "L5_pyramidal->L5_pyramidal|ampa|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.4826990511983276,
+          "sd": 0.04520226677496277
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.8753024614100959,
+          "sd": 0.004872502668621046
+        }
+      },
+      "L5_pyramidal->L5_pyramidal|nmda|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.4826990511983276,
+          "sd": 0.04520226677496277
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.8753024614100959,
+          "sd": 0.004872502668621046
+        }
+      }
+    },
+    "random_subsample/hidden": {
+      "L2_basket->L2_basket|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 1.0,
+          "sd": 0.0
+        }
+      },
+      "L2_basket->L2_pyramidal|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.9064043209876543,
+          "sd": 0.02870401483304101
+        }
+      },
+      "L2_basket->L2_pyramidal|gabab|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.9064043209876543,
+          "sd": 0.02870401483304101
+        }
+      },
+      "L2_basket->L5_pyramidal|gabaa|distal": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.469764254385965,
+          "sd": 0.05384309959672123
+        }
+      },
+      "L2_pyramidal->L2_basket|ampa|soma": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.7635205900690639,
+          "sd": 0.025215704753304684
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.8156399939564484,
+          "sd": 0.025873547909657346
+        }
+      },
+      "L2_pyramidal->L2_pyramidal|ampa|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.22949865300929995,
+          "sd": 0.03296013584308535
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.9816430320816286,
+          "sd": 0.007490472133680905
+        }
+      },
+      "L2_pyramidal->L2_pyramidal|nmda|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.22949865300929995,
+          "sd": 0.03296013584308535
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.9816430320816286,
+          "sd": 0.007490472133680905
+        }
+      },
+      "L2_pyramidal->L5_basket|ampa|soma": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.7498457936622952,
+          "sd": 0.021539825878539778
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.8658058911790255,
+          "sd": 0.0008021214096958406
+        }
+      },
+      "L2_pyramidal->L5_pyramidal|ampa|distal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.14376331465244108,
+          "sd": 0.01990926061967439
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 1.0,
+          "sd": 0.0
+        }
+      },
+      "L2_pyramidal->L5_pyramidal|ampa|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.14376331465244108,
+          "sd": 0.01990926061967439
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 1.0,
+          "sd": 0.0
+        }
+      },
+      "L5_basket->L5_basket|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 1.0,
+          "sd": 0.0
+        }
+      },
+      "L5_basket->L5_pyramidal|gabaa|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.3319548872180451,
+          "sd": 0.07596124912511104
+        }
+      },
+      "L5_basket->L5_pyramidal|gabab|soma": {
+        "weight_spearman": {
+          "n_seeds": 0,
+          "mean": null,
+          "sd": null
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.3319548872180451,
+          "sd": 0.07596124912511104
+        }
+      },
+      "L5_pyramidal->L5_basket|ampa|soma": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.3580690454441457,
+          "sd": 0.035735879776423854
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.8874205538531381,
+          "sd": 0.008524854586240025
+        }
+      },
+      "L5_pyramidal->L5_pyramidal|ampa|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.4825564311976052,
+          "sd": 0.045551527697711904
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.8752085940759282,
+          "sd": 0.0076679605059204224
+        }
+      },
+      "L5_pyramidal->L5_pyramidal|nmda|proximal": {
+        "weight_spearman": {
+          "n_seeds": 3,
+          "mean": 0.4825564311976052,
+          "sd": 0.045551527697711904
+        },
+        "sign_accuracy": {
+          "n_seeds": 3,
+          "mean": 0.8752085940759282,
+          "sd": 0.0076679605059204224
+        }
+      }
+    }
+  }
+}
