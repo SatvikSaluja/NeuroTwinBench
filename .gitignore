@@ -8,3 +8,6 @@ cache/
 # run logs / scratch (not reproducible artifacts, regenerate by rerunning)
 *.log
 fit_heartbeat.txt
+
+# Generated GitHub Pages site
+_site/
